@@ -12,7 +12,6 @@ Je m’intéresse particulièrement à :
 
 J’aime construire des produits performants qui résolvent des **problèmes concrets**.
 
-
 ## 🚀 Technologies
 
 ### 🧠 Langages
@@ -45,13 +44,6 @@ J’aime construire des produits performants qui résolvent des **problèmes con
   <img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge"/>
 </p>
-
-<!--### 🔎 Search & Data
-
-<p>
-<img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white"/>
-<img src="https://img.shields.io/badge/Algolia-003DFF?style=for-the-badge&logo=algolia&logoColor=white"/>
-</p>-->
 
 ### 🌐 CMS
 <p>
@@ -89,7 +81,7 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 
 ### 🧠 Padel Maestro
 
-Assistant IA pour les joueurs de padel permettant d'obtenir des conseils personnalisés et d'analyser les performances.
+Assistant IA pour les joueurs de padel permettant des séances d'entrainement personnalisées.
 
 Technologies :
 <p>
@@ -124,8 +116,6 @@ Technologies :
 🔗 Repository  
 https://github.com/Floopidou/pokeplant
 
----
-
 ### ✍️ Tremic
 
 Blog personnel dédié à la productivité, la tech et l'écosystème Apple.
@@ -144,19 +134,14 @@ Technologies :
 🌍 Website  
 https://tremic.fr
 
----
-
 ## 📊 GitHub Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=mtremauville&show_icons=true&theme=tokyonight)
-
----
 
 ## 🧠 Top Languages
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mtremauville&layout=compact&theme=tokyonight)
 
----
 
 ## 📫 Me contacter
 
