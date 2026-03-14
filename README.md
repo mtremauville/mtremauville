@@ -1,52 +1,128 @@
 # Salut 👋, c’est Mickael 😎
 
-💻 **Développeur Fullstack en reconversion**, passionné par la création d’applications web utiles et centrées sur l’utilisateur.
+💻 **Développeur Fullstack & IA**
 
-Après une formation intensive **AI Software Developer**, je développe des applications web avec **Ruby on Rails** et **JavaScript**, tout en explorant l’intégration de solutions d’intelligence artificielle.
+Après une formation intensive **AI Software Developer au Wagon**, je développe des applications web modernes avec **Ruby on Rails**, **JavaScript** et des **LLM (Large Language Models)**.
 
-J’aime construire des produits simples, performants et utiles pour résoudre des problèmes concrets.
+Je m’intéresse particulièrement à :
 
-<br>
+- l’intégration d’**IA dans les applications web**
+- la création d’**agents intelligents**
+- les **applications SaaS simples et utiles**
+
+J’aime construire des produits performants qui résolvent des **problèmes concrets**.
+
+---
 
 # 🚀 Technologies
 
+### 🧠 Langages
+
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40"/>
-  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </p>
 
-<br>
+### ⚙️ Frameworks
+
+<p>
+<img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+<img src="https://img.shields.io/badge/Stimulus-77E8B9?style=for-the-badge&logo=stimulus&logoColor=black"/>
+<img src="https://img.shields.io/badge/ActionCable-CC0000?style=for-the-badge"/>
+</p>
+
+### 🤖 Intelligence Artificielle
+
+<p>
+<img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+<img src="https://img.shields.io/badge/LLM_Apps-FF6F00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AI_Agents-000000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge"/>
+</p>
+
+### 🔎 Search & Data
+
+<p>
+<img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white"/>
+<img src="https://img.shields.io/badge/Algolia-003DFF?style=for-the-badge&logo=algolia&logoColor=white"/>
+</p>
+
+### 🗄️ Base de données
+
+<p>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+</p>
+
+### 🛠️ Outils
+
+<p>
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
+</p>
+
+---
 
 # 🔭 Projets
 
-Voici quelques projets sur lesquels je travaille :
+### 🧠 Padel Maestro
+Assistant IA pour les joueurs de padel.
 
-- <a href="https://ai-assistant-mtremauville-c6ae19835be6.herokuapp.com/">Padel Maestro</a> 🧠 Applications web intégrant de l'IA 
-- PokePlant - "Pour les plantes qui ne veulent pas mourir" 📱 Applications fullstack avec Ruby on Rails  
-- ⚡ Mon blog <a href="https://tremic.fr">tremic</a>
+Technologies :
+- Ruby on Rails
+- OpenAI API
+- PostgreSQL
 
-<br>
+---
 
-# 🌱 En train d'apprendre
+### 🌱 PokePlant
+Application web pour aider les utilisateurs à prendre soin de leurs plantes.
 
-- Intégration d’IA dans des applications web  
-- Automatisation avec API  
-- Bonnes pratiques de développement fullstack  
+Technologies :
+- Ruby on Rails
+- JavaScript
+- PostgreSQL
 
+GitHub :
+https://github.com/Floopidou/pokeplant
 
-<br>
+---
+
+### ✍️ Tremic
+Blog personnel autour de la productivité et de la tech.
+
+Technologies :
+- NodeJS
+- HTML
+- CSS
+- JavaScript
+
+https://tremic.fr
+
+---
+
+# 📊 GitHub Stats
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=mtremauville&show_icons=true&theme=tokyonight)
+
+---
+
+# 🧠 Top Languages
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mtremauville&layout=compact&theme=tokyonight)
+
+---
 
 # 📫 Me contacter
 
 <p>
-  <a href="https://www.linkedin.com/in/mickael-tremauville/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
+<a href="https://www.linkedin.com/in/mickael-tremauville/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 </p>
