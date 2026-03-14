@@ -163,3 +163,41 @@ p {
   border-radius: 0 !important; /* Force la suppression de tout arrondi résiduel */
   margin: 5px;
 }
+.shields-row img {
+  height: 20px; /* Force une taille uniforme pour tous les shields */
+  width: auto;
+  border-radius: 0 !important;
+  margin: 4px;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.shields-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.shields-row.left {
+  justify-content: flex-start;
+}
+
+/* Grille pour les technos */
+.tech-grid-custom {
+  text-align: left;
+}
+
+.tech-category h3 {
+  font-size: 14px;
+  color: #7ECE90;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 5px;
+}
+
+/* Suppression du rose (Garantie) */
+.card {
+  box-shadow: 0 0 5px #FFFFFF, 0 0 15px rgba(37, 99, 235, 0.4) !important;
+}
