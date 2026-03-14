@@ -1,314 +1,95 @@
-/* Import de Roboto pour le côté moderne/tech */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-body {
-  background-color: #020202; /* Fond noir profond comme le SVG */
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
+/* Configuration de la Grille Bento */
+.container {
+  max-width: 1000px; /* Plus large pour le mode Bento */
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-h1, h2, .follow {
-  color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Légère lueur sur les titres */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur desktop */
+  grid-auto-rows: minmax(180px, auto);
+  gap: 20px;
 }
 
-/* Image de profil style Apple */
-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 20px;
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
-}
-
-p {
-  color: #9CA3AF; /* Gris doux pour la lisibilité */
-  line-height: 1.6;
-}
-
-/* --- L'EFFET NEON GLOWTIME SUR LES CARTES (SANS ROSE) --- */
+/* Style de base des cartes Bento */
 .card {
-  background-color: rgba(17, 24, 39, 0.95); /* Presque opaque */
-  margin: 40px 0;
-  border-radius: 15px;
-  padding: 40px;
+  background-color: rgba(17, 24, 39, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px); /* Effet verre dépoli */
-  
-  /* --- LUEUR NÉON AJUSTÉE (ROSE ENLEVÉ) --- */
-  /* Cœur blanc -> Lueur Bleue -> Lueur Violette */
-  box-shadow: 
-    0 0 5px #FFFFFF,          /* Le cœur blanc brillant */
-    0 0 15px rgba(37, 99, 235, 0.5), /* Lueur bleue proche (dominante) */
-    0 0 30px rgba(168, 85, 247, 0.3); /* Lueur violette lointaine (réduite) */
-  
+  border-radius: 20px; /* Bords arrondis style Apple */
+  padding: 25px;
+  margin: 0; /* Plus de marge extérieure, c'est la grille qui gère le gap */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 5px #FFFFFF, 0 0 15px rgba(37, 99, 235, 0.3);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 
-    0 0 8px #FFFFFF,
-    0 0 20px rgba(37, 99, 235, 0.6), 
-    0 0 40px rgba(168, 85, 247, 0.4);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #FFFFFF, 0 0 25px rgba(37, 99, 235, 0.5);
 }
 
-/* --- BOUTON SIRI-STYLE (SANS ROSE) --- */
-.bouton-bleu {
-  display: inline-block;
-  /* Dégradé centré sur le bleu et le violet uniquement */
-  background: linear-gradient(135deg, #2563EB, #a855f7);
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 50px; /* Bord arrondi complet */
-  font-weight: bold;
-  margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
-  transition: all 0.3s ease;
-}
-
-.bouton-bleu:hover {
-  /* Au survol, on intensifie juste le violet, sans aller vers le rose */
-  background: linear-gradient(135deg, #a855f7, #6B72E1);
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
-}
-
-/* Réseaux Sociaux */
-.list-inline {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.reseau {
-  font-size: 40px;
-  color: rgba(255, 255, 255, 0.3);
-  transition: all 0.4s ease;
-}
-
-.reseau:hover {
-  color: #ffffff;
-  filter: drop-shadow(0 0 10px #ffffff);
-  transform: scale(1.2);
-}
-
-/* Container & Responsive */
-.container {
-  width: 90%;
-  max-width: 700px;
-  margin: 60px auto;
-}
-
-@media (max-width: 540px) {
-  .container { width: 95%; }
-  .list-inline { flex-direction: column; align-items: center; }
-}
-/* Alignement des Shields */
-.shields-row {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 15px 0;
-}
-
-.shields-row img {
-  height: 28px; /* Taille standard for-the-badge */
-  box-shadow: none; /* Enlève l'ombre portée des images normales */
-  border: none;
-  border-radius: 0;
-}
-
-/* Ajustements pour les sections de tech */
-.tech-section h3 {
-  font-size: 16px;
-  margin-top: 25px;
-  color: #9CA3AF;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Stats GitHub responsive */
-.stats-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 15px;
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
-}
-
-/* Style spécifique pour les cartes de projets */
-.project-card {
-  border-left: 3px solid #2563EB;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 0 10px 10px 0;
+/* Positionnement spécifique des blocs */
+.profile-bento {
+  grid-column: span 2; /* Prend 2 colonnes */
   text-align: left;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
 }
 
-.project-card h3 {
-  margin-top: 0;
-  color: #ffffff;
-}
-.shields-row img {
-  border-radius: 0 !important; /* Force la suppression de tout arrondi résiduel */
-  margin: 5px;
-}
-.shields-row img {
-  height: 20px; /* Force une taille uniforme pour tous les shields */
-  width: auto;
-  border-radius: 0 !important;
-  margin: 4px;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-.shields-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10px 0;
-}
-
-.shields-row.left {
+.project-bento {
+  grid-row: span 2; /* Prend 2 rangées en hauteur */
   justify-content: flex-start;
 }
 
-/* Grille pour les technos */
-.tech-grid-custom {
-  text-align: left;
+.stats-bento {
+  grid-column: span 2;
 }
 
-.tech-category h3 {
-  font-size: 14px;
-  color: #7ECE90;
-  margin-bottom: 5px;
-  margin-top: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-bottom: 5px;
+/* Ajustements éléments internes */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
 }
 
-/* Suppression du rose (Garantie) */
-.card {
-  box-shadow: 0 0 5px #FFFFFF, 0 0 15px rgba(37, 99, 235, 0.4) !important;
+.mini-project {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-/* --- UNIFORMISATION DES SHIELDS --- */
-.shields-row {
-  display: flex;
+
+.shields-row.center {
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 10px 0;
-}
-
-.shields-row.left {
-  justify-content: flex-start; /* Aligné à gauche pour les catégories */
 }
 
 .shields-row img {
-  height: 24px; /* Hauteur fixe pour que le texte interne soit à ~10px */
-  border-radius: 0 !important; /* Rectangle pur */
-  box-shadow: none !important; /* Pas d'ombre sur les badges */
-  border: none !important;
-  transition: transform 0.2s ease;
-}
-
-.shields-row img:hover {
-  transform: translateY(-2px);
-}
-
-/* --- TITRES DES CATÉGORIES --- */
-.tech-category h3 {
-  font-size: 13px;
-  text-align: left;
-  color: #9CA3AF;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 20px;
-  margin-bottom: 8px;
-  border-left: 3px solid #2563EB;
-  padding-left: 10px;
-}
-
-/* --- SUPPRESSION DU ROSE SUR LES CARDS --- */
-.card {
-  box-shadow: 
-    0 0 5px #FFFFFF,
-    0 0 15px rgba(37, 99, 235, 0.4), 
-    0 0 30px rgba(168, 85, 247, 0.2) !important;
-}
-### Mise à jour du `style.css` (Partie Projets & Stats)
-
-Ajoute ces propriétés à ton fichier CSS pour que l'affichage soit optimal :
-
-```css
-/* --- STYLE DES PROJETS --- */
-.project-item {
-  text-align: left;
-  background: rgba(255, 255, 255, 0.02);
-  border-left: 3px solid #2563EB;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 0 10px 10px 0;
-  transition: background 0.3s ease;
-}
-
-.project-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.project-item h3 {
-  margin-top: 0;
-  color: #ffffff;
-  font-size: 1.2rem;
-}
-
-.project-item p {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-/* Boutons plus petits pour les projets */
-.small-btn {
-  padding: 8px 16px;
-  font-size: 0.8rem;
-  margin-top: 10px;
-}
-
-/* Ajustement des mini-shields dans les projets */
-.shields-row.mini img {
-  height: 20px; /* Plus petit pour les projets pour rester discret */
-  margin: 2px;
-}
-
-/* --- SECTION STATS --- */
-.stats-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.stats-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 22px;
+  border-radius: 0; /* Rectangles parfaits comme demandé */
+  margin: 4px;
 }
 
 /* --- RESPONSIVE --- */
-@media (min-width: 768px) {
-  .stats-container {
-    flex-direction: row;
-    justify-content: center;
+
+/* Tablettes : on passe à 2 colonnes */
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobiles : tout en 1 colonne */
+@media (max-width: 600px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-bento, .stats-bento {
+    grid-column: span 1;
+    flex-direction: column;
+    text-align: center;
   }
 }
