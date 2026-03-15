@@ -39,7 +39,7 @@ J’aime construire des produits performants qui résolvent des **problèmes con
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </p>
 
-### ⚙️ Frameworks
+### ⚙️ Frameworks & librairies
 
 <p>
   <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
@@ -47,6 +47,7 @@ J’aime construire des produits performants qui résolvent des **problèmes con
   <img src="https://img.shields.io/badge/Stimulus-77E8B9?style=for-the-badge&logo=stimulus&logoColor=black"/>
   <img src="https://img.shields.io/badge/ActionCable-CC0000?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"/>
 </p>
 
 ### 🤖 Intelligence Artificielle
@@ -116,7 +117,7 @@ Technologies :
 
 ### 🌱 PokePlant
 
-Application web collaborative pour aider les utilisateurs à prendre soin de leurs plantes.
+Application web IA pour aider les utilisateurs à prendre soin de leurs plantes.
 
 Technologies :
 <p>
