@@ -21,6 +21,9 @@
   overflow: hidden;
   border: 1px solid grey;
   border-radius: 5px;
+  background:#020202; /* Noir très profond pour le contraste maximal */
+  position: relative;
+  overflow: hidden;
 }
 
 .container{
