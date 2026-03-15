@@ -46,6 +46,7 @@ J’aime construire des produits performants qui résolvent des **problèmes con
   <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
   <img src="https://img.shields.io/badge/Stimulus-77E8B9?style=for-the-badge&logo=stimulus&logoColor=black"/>
   <img src="https://img.shields.io/badge/ActionCable-CC0000?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
 </p>
 
 ### 🤖 Intelligence Artificielle
