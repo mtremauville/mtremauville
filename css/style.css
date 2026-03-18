@@ -304,8 +304,14 @@
       padding: 1.5rem 1rem;
       text-align: center;
       transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
+    .stack-item img {
+      max-width: 100%;
+      height: auto;
+    }
     .stack-item:hover {
       border-color: var(--accent-purple);
       transform: translateY(-4px);
