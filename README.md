@@ -5,7 +5,7 @@
 
 
 
-🧠 Fullstack developer qui construit des **applications web augmentées par l’IA**.
+🧠 Fullstack developer qui construit des ** applications web augmentées par l’IA **.
 
 Stack principale :
 <p>
