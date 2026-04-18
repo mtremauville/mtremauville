@@ -102,19 +102,24 @@ nav {
 
 .hero-photo {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
 }
 
 .frost-card {
   position: relative;
-  border-radius: 24px;
-  padding: 10px;
+  border-radius: 50%;
+  padding: 6px;
   background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 3px solid transparent;
+  background-clip: padding-box;
   box-shadow:
-    0 8px 32px rgba(37, 99, 235, 0.12),
-    0 2px 8px rgba(0, 0, 0, 0.06),
+    0 0 0 3px rgba(37, 99, 235, 0.5),
+    0 0 0 6px rgba(99, 160, 255, 0.2),
+    0 16px 48px rgba(37, 99, 235, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -122,32 +127,39 @@ nav {
 .frost-card::before {
   content: '';
   position: absolute;
-  inset: -1px;
-  border-radius: 25px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(37, 99, 235, 0.08) 50%,
-    rgba(255, 255, 255, 0.2) 100%
+  inset: -4px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #2563eb,
+    #60a5fa,
+    #a78bfa,
+    #2563eb
   );
-  z-index: 0;
-  pointer-events: none;
+  z-index: -1;
+  animation: spin-border 6s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes spin-border {
+  to { transform: rotate(360deg); }
 }
 
 .frost-card:hover {
-  transform: translateY(-6px) rotate(1deg);
+  transform: scale(1.04);
   box-shadow:
-    0 20px 60px rgba(37, 99, 235, 0.18),
-    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 0 0 3px rgba(37, 99, 235, 0.7),
+    0 0 0 8px rgba(99, 160, 255, 0.25),
+    0 24px 64px rgba(37, 99, 235, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .frost-card img {
   display: block;
   width: 280px;
-  height: 340px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 50%;
   position: relative;
   z-index: 1;
 }
@@ -544,7 +556,7 @@ footer {
 
   .frost-card img {
     width: 160px;
-    height: 200px;
+    height: 160px;
   }
 
   h1 {
