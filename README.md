@@ -34,6 +34,7 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+
 **AI / LLM**
 ![ruby_llm](https://img.shields.io/badge/ruby__llm-CC0000?logo=ruby&logoColor=white)
 ![Claude API](https://img.shields.io/badge/Claude_API-D4A27F?logo=anthropic&logoColor=black)
