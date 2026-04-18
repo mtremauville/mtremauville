@@ -1,180 +1,59 @@
-# Salut 👋, c’est Mickael 😎
-<div style="width: 100%;">
-  <img src="welcome.svg" style="width: 100%;" alt="Click to see the source">
-</div>
+# 👋 Hey, I'm Mickaël
 
+**Solutions Engineer** · Full-Stack Developer · AI/LLM Integrator
 
+> 22 years explaining tech to people. Now I build it — and help companies ship it to their customers.
 
-🧠 Fullstack developer qui construit des ** applications web augmentées par l’IA **.
+---
 
-Stack principale :
-<p>
-  <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/LLM-FF6F00?style=for-the-badge"/>
-</p>
-J’aime transformer des idées simples en **produits utiles et intelligents**.
+### 🧭 The short version
 
-Après une formation intensive **AI Software Developer au Wagon** 🚂, je développe des applications web modernes avec **Ruby on Rails**, **JavaScript** et des **LLM (Large Language Models)**.
+I spent 22 years at **FNAC** and **Apple Store** turning complex tech into buying decisions for thousands of customers. In 2026, I graduated from **Le Wagon's AI Software Engineering bootcamp** (RNCP Level 6) and started building for real.
 
-Je m’intéresse particulièrement à :
+I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual background — hands-on development + two decades of customer-facing tech expertise — becomes a real asset.
 
-- l’intégration d’**IA dans les applications web**
-- la création d’**agents intelligents**
-- les **applications SaaS simples et utiles**
+📍 Paris area · 🇫🇷 French (native) · 🇬🇧 English (fluent) · 🌐 [tremic.fr](https://tremic.fr)
 
-J’aime construire des produits performants qui résolvent des **problèmes concrets**.
+---
 
-<br>
+### 🔧 What I build with
 
-## 🚀 Technologies
+```
+Backend        Ruby on Rails 8 · PostgreSQL · Devise · ActiveRecord
+Frontend       JavaScript · Vue.js · Stimulus JS · HTML · CSS/SCSS · Bootstrap
+AI / LLM       ruby_llm · Claude API · OpenAI API · SSE Streaming
+Tools          Git · GitHub · Heroku · Figma · VS Code
+```
 
-### 🧠 Langages
+---
 
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-</p>
+### 🚀 Featured projects
 
-### ⚙️ Frameworks & librairies
+| Project | What it does | Stack | Link |
+|---------|-------------|-------|------|
+| 🎾 **Padel Maestro** | AI coaching agent — generates personalized training plans with tactical advice | Rails 8 · Claude API · ruby_llm | [Repo](https://github.com/mtremauville/ai-assistant) |
+| 💄 **GlowrIA** | Smart skincare routine — barcode scan → INCI analysis → molecular conflict detection → AI-generated routine + streaming chat | Rails 8 · OpenAI · SSE · Stimulus JS | [Repo](https://github.com/mtremauville/glowria) |
+| 🌱 **PokéPlant** | AI plant recognition app — snap a photo, get species identification + care tips | Rails · OpenAI Vision API | [Live](https://pokeplant.online) · [Repo](https://github.com/Floopidou/pokeplant) |
 
-<p>
-  <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Stimulus-77E8B9?style=for-the-badge&logo=stimulus&logoColor=black"/>
-  <img src="https://img.shields.io/badge/ActionCable-CC0000?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"/>
-</p>
+---
 
-### 🤖 Intelligence Artificielle
+### 💡 Why Solutions Engineer?
 
-<p>
-  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LLM-FF6F00?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/AI_Agents-000000?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge"/>
-</p>
+Most Solutions Engineers are either **devs who learned to talk to clients** or **salespeople who learned to code**. I did both — just in the opposite order:
 
-### 🌐 CMS
-<p>
-  <img src="https://img.shields.io/badge/Ghost-000?style=for-the-badge&logo=ghost&logoColor=yellow"/>
-  <img src="https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white"/>
-</p>
+- **2002–2026**: 22 years of live product demos, technical objection handling, and training teams at FNAC & Apple Store
+- **2026**: Full-stack development certification (Le Wagon AI) + real projects shipped with Rails, AI/LLM, and streaming
 
-### 🗄️ Base de données
+I can **code a POC in the morning and demo it to a CTO in the afternoon**. That's the pitch.
 
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-</p>
+---
 
-### 🛠️ Outils
+### 📬 Let's connect
 
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white"/>
+- 💼 [LinkedIn](https://www.linkedin.com/in/mickael-tremauville/)
+- 🌐 [tremic.fr](https://tremic.fr)
+- 📧 [Send me a message](https://www.linkedin.com/in/mickael-tremauville/)
 
-</p>
+---
 
-### 💻 📱 Favorites OS
-<p>
-  <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white"/>
-  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
-</p>
-
-<br>
-
-## ⭐ Featured Projects
-
-### 🧠 Padel Maestro
-
-Assistant IA pour les joueurs de padel permettant des séances d'entrainement personnalisées.
-
-Technologies :
-<p>
-  <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
-</p>
-
-### 🌱 PokePlant
-
-Application web IA pour aider les utilisateurs à prendre soin de leurs plantes.
-
-Technologies :
-<p>
-  <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
-</p>
-
-🔗 Repository  
-https://github.com/Floopidou/pokeplant
-
-### ✍️ Tremic
-
-Blog personnel dédié à la productivité, la tech et l'écosystème Apple.
-
-Technologies :
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Ghost-000?style=for-the-badge&logo=ghost&logoColor=yellow"/>
-  <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white"/>
-</p>
-
-
-🌍 Website  
-https://tremic.fr
-
-<br>
-
-## 📊 GitHub Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=mtremauville&show_icons=true&theme=tokyonight)
-
-<br>
-
-## 🧠 Top Languages
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mtremauville&layout=compact&theme=tokyonight)
-
-<br>
-
-## 📫 Me contacter
-
-<p>
-  <a href="https://www.linkedin.com/in/mickael-tremauville/">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:mickael.tremauville@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-</p>
+<sub>Looking for a **Solutions Engineer / Sales Engineer / Developer Advocate** role · Paris area · Available now</sub>
