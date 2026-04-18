@@ -19,6 +19,7 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 ### 🔧 What I build with
 
 **Backend**
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=white)
 ![Rails](https://img.shields.io/badge/Rails_8-CC0000?logo=rubyonrails&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Devise](https://img.shields.io/badge/Devise-CC0000?logo=ruby&logoColor=white)
@@ -31,7 +32,8 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![SCSS](https://img.shields.io/badge/CSS%2FSCSS-CC6699?logo=sass&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
-
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 **AI / LLM**
 ![ruby_llm](https://img.shields.io/badge/ruby__llm-CC0000?logo=ruby&logoColor=white)
 ![Claude API](https://img.shields.io/badge/Claude_API-D4A27F?logo=anthropic&logoColor=black)
