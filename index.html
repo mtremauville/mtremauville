@@ -3,350 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mickael | Ai Software developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link href="css/style.css" type="text/css" rel="stylesheet">
-
+  <title>Mickaël Tremauville — Solutions Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+
   <nav>
-    <div class="logo" style="text-decoration:none">&lt;mickael /&gt;</div>
+    <a href="#" class="logo">MT</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
+      <li><a href="#about">À propos</a></li>
       <li><a href="#projects">Projets</a></li>
       <li><a href="#stack">Stack</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="mailto:mickael.tremauville@gmail.com" class="btn-nav">Disons bonjour</a>
   </nav>
 
   <section id="hero">
-    <p class="greeting">Salut, moi c'est</p>
-    <h1>Mickael.<br><span class="highlight">Ai Software Developer<span class="cursor"></span></span></h1>
-    <p>Développeur Ruby on Rails &amp; AI</p>
-    <p class="tagline">Je crée des applications web avec Ruby on Rails, une touche de pixel art, et beaucoup de passion.</p>
-    <div class="cta-buttons">
-      <a href="#projects" class="btn">Voir mes projets</a>
-      <a href="#contact" class="btn btn-secondary">Me contacter</a>
+    <div class="hero-content fade-in">
+      <span class="hero-tag">Solutions Engineer · Full-Stack Developer · AI/LLM</span>
+      <h1>Je construis<br>des produits tech,<br><span class="accent">et je les vends.</span></h1>
+      <p class="hero-desc">22 ans à expliquer la tech. Depuis 2026, je la construis — et j'aide les entreprises à la livrer à leurs clients.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn-ghost">Me contacter →</a>
+      </div>
+      <div class="hero-meta">
+        <span>📍 Paris</span>
+        <span>🇫🇷 Français · 🇬🇧 English</span>
+        <a href="https://tremic.fr" target="_blank">tremic.fr ↗</a>
+      </div>
     </div>
   </section>
 
   <section id="about">
-    <h2 class="section-title" data-num="01.">À propos</h2>
-    <div class="fade-in">
-      <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 1.5rem;">
-        Développeur web passionné par le backend robuste et les interfaces soignées.
-        J'aime construire des applications complètes, du schéma de base de données jusqu'au pixel parfait.
-      </p>
-      <p style="color: var(--text-muted); max-width: 600px;">
-        Quand je ne code pas, je dessine du pixel art ou j'expérimente
-        avec de nouvelles technos. Actuellement, je travaille sur
-        <span style="color: var(--accent-mint);">PokéPlant</span>, une app Rails
-        où tes plantes te parlent grâce à l'IA. 🌱
-      </p>
+    <div class="section-label">01 / À propos</div>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <h2>Du retail tech<br>au code en prod.</h2>
+        <p>J'ai passé 22 ans chez <strong>FNAC</strong> et <strong>Apple Store</strong> à transformer de la technologie complexe en décisions d'achat pour des milliers de clients. En 2026, j'ai obtenu la certification <strong>Le Wagon AI Software Engineering</strong> (RNCP Niveau 6) et j'ai commencé à construire pour de vrai.</p>
+        <p>Je cherche un rôle de <strong>Solutions Engineer / Sales Engineer</strong> où mon double background — développement hands-on + vingt ans d'expertise tech face aux clients — devient un vrai atout.</p>
+        <p>Je peux <strong>coder un POC le matin et le démo à un CTO l'après-midi</strong>. C'est le pitch.</p>
+      </div>
+      <div class="about-stats fade-in">
+        <div class="stat">
+          <span class="stat-num">22</span>
+          <span class="stat-label">ans de tech client</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">projets IA en prod</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2026</span>
+          <span class="stat-label">Le Wagon AI</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="projects">
-    <h2 class="section-title" data-num="02.">Projets</h2>
+    <div class="section-label">02 / Projets</div>
+    <h2 class="section-title fade-in">Ce que j'ai construit</h2>
     <div class="projects-grid">
-      <div class="project-card fade-in">
-        <div class="project-header">
-          <h3 class="project-title">✨ GlowrIA</h3>
+
+      <div class="project-card featured fade-in">
+        <div class="project-meta">
+          <span class="project-num">01</span>
           <div class="project-links">
-            <a href="https://github.com/mtremauville/glowria" target="_blank">GitHub ↗</a>
             <a href="https://glowria-13e2b2a157f6.herokuapp.com/users/sign_in" target="_blank">Demo ↗</a>
+            <a href="https://github.com/mtremauville/glowria" target="_blank">GitHub ↗</a>
           </div>
         </div>
-        <p class="project-desc">
-           L’assistant skincare intelligent qui analyse vos produits et optimise votre routine beauté.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">Rails 8</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Turbo Streams</span>
-          <span class="tech-tag">GPT-4o</span>
-          <span class="tech-tag">TailwindCSS</span>
+        <h3>💄 GlowrIA</h3>
+        <p>Assistant skincare intelligent — scan de code-barres → analyse INCI → détection de conflits moléculaires → routine générée par IA + chat en streaming.</p>
+        <div class="project-tags">
+          <span>Rails 8</span><span>OpenAI</span><span>SSE Streaming</span><span>Stimulus JS</span>
         </div>
       </div>
 
       <div class="project-card fade-in">
-        <div class="project-header">
-          <h3 class="project-title">🌿 PokéPlant</h3>
-          <div class="project-links">
-            <a href="https://github.com/Floopidou/pokeplant" target="_blank">GitHub ↗</a>
-            <a href="https://pokeplant.online" target="_blank">Demo ↗</a>
-          </div>
-        </div>
-        <p class="project-desc">
-          App de soin des plantes avec chat IA. Tes plantes ont leur personnalité
-          et te rappellent quand les arroser.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">Rails 8</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Turbo Streams</span>
-          <span class="tech-tag">GPT-4o</span>
-          <span class="tech-tag">Pixel Art UI</span>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-header">
-          <h3 class="project-title">📝 Blog TREMIC</h3>
-          <div class="project-links">
-            <a href="https://tremic.fr" target="_blank">Lien ↗</a>
-          </div>
-        </div>
-        <p class="project-desc">
-          Plateforme de blog avec système de rôles, commentaires, et gestion
-          complète du contenu.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Bootstrap</span>
-          <span class="tech-tag">NodeJS</span>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-header">
-          <h3 class="project-title">🎮 Padel Maestro</h3>
+        <div class="project-meta">
+          <span class="project-num">02</span>
           <div class="project-links">
             <a href="https://github.com/mtremauville/ai-assistant" target="_blank">GitHub ↗</a>
           </div>
         </div>
-        <p class="project-desc">
-          Un assistant IA qui vous propose des trainings de Padel personnalisés.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">Rails 8</span>
-          <span class="tech-tag">Turbo Streams</span>
-          <span class="tech-tag">HTML</span>
-          <span class="tech-tag">CSS</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Bootstrap</span>
-          <span class="tech-tag">GPT-4o</span>
-          <span class="tech-tag">Pixel Art UI</span>
+        <h3>🎾 Padel Maestro</h3>
+        <p>Agent IA de coaching — génère des plans d'entraînement personnalisés avec conseils tactiques.</p>
+        <div class="project-tags">
+          <span>Rails 8</span><span>Claude API</span><span>ruby_llm</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <div class="project-links">
+            <a href="https://pokeplant.online" target="_blank">Live ↗</a>
+            <a href="https://github.com/Floopidou/pokeplant" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>🌱 PokéPlant</h3>
+        <p>App de reconnaissance de plantes par IA — prends une photo, obtiens l'espèce + conseils d'entretien.</p>
+        <div class="project-tags">
+          <span>Rails</span><span>OpenAI Vision</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="section-label">03 / Stack</div>
+    <h2 class="section-title fade-in">Ce avec quoi je construis</h2>
+    <div class="stack-categories">
+      <div class="stack-category fade-in">
+        <h4>Backend</h4>
+        <div class="stack-items">
+          <span>Ruby</span><span>Rails 8</span><span>PostgreSQL</span><span>Devise</span><span>ActiveRecord</span>
+        </div>
+      </div>
+      <div class="stack-category fade-in">
+        <h4>Frontend</h4>
+        <div class="stack-items">
+          <span>JavaScript</span><span>TypeScript</span><span>Vue.js</span><span>React</span><span>Stimulus JS</span><span>HTML5</span><span>CSS/SCSS</span><span>Bootstrap</span>
+        </div>
+      </div>
+      <div class="stack-category fade-in">
+        <h4>AI / LLM</h4>
+        <div class="stack-items">
+          <span>ruby_llm</span><span>Claude API</span><span>OpenAI API</span><span>SSE Streaming</span>
+        </div>
+      </div>
+      <div class="stack-category fade-in">
+        <h4>Outils</h4>
+        <div class="stack-items">
+          <span>Git</span><span>GitHub</span><span>Heroku</span><span>Figma</span><span>VS Code</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="stack">
-  <h2 class="section-title" data-num="03.">Stack</h2>
-  <div class="stack-grid">
-    <!-- Langages -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" alt="Ruby">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS">
-    </div>
-
-    <!-- Frameworks & Librairies -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white" alt="Rails">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Stimulus-77E8B9?style=for-the-badge&logo=stimulus&logoColor=black" alt="Stimulus">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="VueJS">
-    </div>
-
-    <!-- Intelligence Artificielle -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/LLM-FF6F00?style=for-the-badge" alt="LLM">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/AI_Agents-000000?style=for-the-badge" alt="AI Agents">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge" alt="Text AI">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge" alt="Image AI">
-    </div>
-
-    <!-- CMS -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Ghost-000?style=for-the-badge&logo=ghost&logoColor=yellow" alt="Ghost CMS">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="Wordpress">
-    </div>
-
-    <!-- Base de données -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-    </div>
-
-    <!-- Auth -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Devise-CC342D?style=for-the-badge&logo=ruby&logoColor=white" alt="Devise">
-    </div>
-
-    <!-- Outils -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white" alt="Canva">
-    </div>
-
-    <!-- Hébergement -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white" alt="DigitalOcean">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white" alt="Hostinger">
-    </div>
-
-    <!-- OS -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" alt="iOS">
-    </div>
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu">
-    </div>
-
-    <!-- Pixel Art -->
-    <div class="stack-item fade-in">
-      <img src="https://img.shields.io/badge/Pixel_Art-FF6B9D?style=for-the-badge&logo=aseprite&logoColor=white" alt="Pixel Art">
-    </div>
-  </div>
-</section>
-<!--
-      <p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-</p>
-
-### ⚙️ Frameworks & librairies
-
-<p>
-  <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Stimulus-77E8B9?style=for-the-badge&logo=stimulus&logoColor=black"/>
-  <img src="https://img.shields.io/badge/ActionCable-CC0000?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"/>
-</p>
-
-### 🤖 Intelligence Artificielle
-
-<p>
-  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LLM-FF6F00?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/AI_Agents-000000?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge"/>
-</p>
-
-### 🌐 CMS
-<p>
-  <img src="https://img.shields.io/badge/Ghost-000?style=for-the-badge&logo=ghost&logoColor=yellow"/>
-  <img src="https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white"/>
-</p>
-
-### 🗄️ Base de données
-
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-</p>
-
-### 🛠️ Outils
-
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white"/>
-
-</p>
-
-### 💻 📱 Favorites OS
-<p>
-  <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white"/>
-  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
-</p>-->
   <section id="contact">
-    <h2 class="section-title" data-num="04.">Contact</h2>
-    <div class="contact-content fade-in">
-      <p class="contact-text">
-        Un projet en tête ? Une question ? Mon inbox est toujours ouverte.
-        N'hésite pas à me contacter !
-      </p>
-      <a href="mailto:mickael.tremauville@gmail.com" class="btn">Dis bonjour 👋</a>
+    <div class="contact-inner fade-in">
+      <div class="section-label">04 / Contact</div>
+      <h2>Parlons-en.</h2>
+      <p>Un projet en tête ? Je suis disponible pour en discuter.</p>
+      <a href="mailto:mickael.tremauville@gmail.com" class="btn-primary btn-large">Envoyer un message</a>
       <div class="social-links">
-        <a href="https://github.com/mtremauville" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/mickael-tremauville" target="_blank">LinkedIn</a>
-        <a href="https://x.com/tremic_off" target="_blank">X (ancien Twitter)</a>
+        <a href="https://linkedin.com/in/mickael-tremauville" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/mtremauville" target="_blank">GitHub ↗</a>
+        <a href="https://tremic.fr" target="_blank">tremic.fr ↗</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Construit avec <span class="pixel-heart">♥</span> et beaucoup de ☕</p>
-    <p style="margin-top: 0.5rem;">© 2026 tremic.</p>
+    <p>© 2026 Mickaël Tremauville</p>
   </footer>
 
   <script src="js/main.js"></script>
