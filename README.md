@@ -54,7 +54,7 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 
 | Project | What it does | Stack | Link |
 |---------|-------------|-------|------|
-| 🎾 **Padel Maestro** | AI coaching agent — generates personalized training plans with tactical advice | Rails 8 · Claude API · ruby_llm | [Repo](https://github.com/mtremauville/ai-assistant) |
+| 🎾 **Padel Maestro** | AI coaching agent — generates personalized training plans with tactical advice | Rails 8 · OpenAI API · ruby_llm | [Repo](https://github.com/mtremauville/ai-assistant) |
 | 💄 **GlowrIA** | Smart skincare routine — barcode scan → INCI analysis → molecular conflict detection → AI-generated routine + streaming chat | Rails 8 · OpenAI · SSE · Stimulus JS | [Repo](https://github.com/mtremauville/glowria) |
 | 🌱 **PokéPlant** | AI plant recognition app — snap a photo, get species identification + care tips | Rails · OpenAI Vision API | [Live](https://pokeplant.online) · [Repo](https://github.com/mtremauville/pokeplant) |
 
