@@ -344,23 +344,62 @@ section {
 }
 
 .project-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  position: relative;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
   border-radius: var(--radius);
   padding: 2rem;
-  transition: all 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Blob coloré derrière chaque card */
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: -32px;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.55;
+  filter: blur(48px);
+  animation: blob-spin 10s linear infinite;
+}
+
+/* GlowrIA — rose / violet */
+.project-card.featured::before {
+  background: conic-gradient(from 0deg, #f472b6, #a855f7, #818cf8, #ec4899, #f472b6);
+  animation-duration: 12s;
+  inset: -40px;
+  opacity: 0.5;
+}
+
+/* Padel Maestro — bleu / cyan */
+.project-card:nth-child(2)::before {
+  background: conic-gradient(from 120deg, #60a5fa, #06b6d4, #38bdf8, #3b82f6, #60a5fa);
+  animation-duration: 9s;
+  animation-direction: reverse;
+}
+
+/* PokéPlant — vert / menthe */
+.project-card:nth-child(3)::before {
+  background: conic-gradient(from 240deg, #34d399, #a3e635, #2dd4bf, #10b981, #34d399);
+  animation-duration: 14s;
+}
+
+@keyframes blob-spin {
+  to { transform: rotate(360deg); }
 }
 
 .project-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.08);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
 }
 
 .project-card.featured {
   grid-column: 1 / -1;
-  background: var(--accent-light);
-  border-color: rgba(37, 99, 235, 0.2);
 }
 
 .project-meta {
@@ -418,10 +457,11 @@ section {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--accent);
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
   padding: 0.3rem 0.75rem;
   border-radius: 20px;
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 /* ── Stack ── */
@@ -471,12 +511,38 @@ section {
 }
 
 .contact-inner {
+  position: relative;
   max-width: 1100px;
   margin: 0 auto 4rem;
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
   border-radius: 24px;
   padding: 6rem 4rem;
   text-align: center;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.contact-inner::before {
+  content: '';
+  position: absolute;
+  inset: -60px;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.45;
+  filter: blur(70px);
+  background: conic-gradient(
+    from 0deg,
+    #f472b6,
+    #a855f7,
+    #60a5fa,
+    #34d399,
+    #fbbf24,
+    #f472b6
+  );
+  animation: blob-spin 16s linear infinite;
 }
 
 #contact .section-label {
@@ -573,6 +639,12 @@ footer {
     padding: 8rem 1.25rem 4rem;
     flex-direction: column-reverse;
     gap: 2.5rem;
+    align-items: center;
+  }
+
+  .hero-photo {
+    justify-content: center;
+    width: 100%;
   }
 
   .frost-card img {
@@ -618,7 +690,21 @@ footer {
 
   .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
+    width: 100%;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+
+  .stat {
+    text-align: center;
+    border-left: none;
+    border-top: 3px solid var(--accent);
+    padding-left: 0;
+    padding-top: 1rem;
+    min-width: 100px;
   }
 }

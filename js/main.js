@@ -73,6 +73,20 @@ function typeWriter(element, speed, onDone) {
   tick();
 }
 
+// ── Count-up ──
+function countUp(el, target, duration) {
+  const start = performance.now();
+  function step(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    // ease-out cubic
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(eased * target);
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
 // ── Scroll observer commun ──
 // Déclenche fade-in ET typewriter quand l'élément entre dans le viewport.
 const scrollObserver = new IntersectionObserver((entries) => {
@@ -88,8 +102,15 @@ const scrollObserver = new IntersectionObserver((entries) => {
 
     if (el.dataset.typewriter) {
       const speed = parseInt(el.dataset.typewriter, 10) || 40;
-      // Petit délai pour laisser le fade-in démarrer avant la frappe
       setTimeout(() => typeWriter(el, speed), el.classList.contains('fade-in') ? 200 : 0);
+    }
+
+    if (el.dataset.count) {
+      const target = parseInt(el.dataset.count, 10);
+      // Durée proportionnelle : 22 → 1s, 2026 → 1.8s, plafonné à 2s
+      const duration = Math.min(600 + target * 0.4, 2000);
+      const delay = el.classList.contains('fade-in') ? 200 : 0;
+      setTimeout(() => countUp(el, target, duration), delay);
     }
   });
 }, { threshold: 0.25 });
@@ -97,5 +118,5 @@ const scrollObserver = new IntersectionObserver((entries) => {
 // Enregistre tous les éléments fade-in
 document.querySelectorAll('.fade-in').forEach(el => scrollObserver.observe(el));
 
-// Enregistre les cibles typewriter (data-typewriter="vitesse_ms")
-document.querySelectorAll('[data-typewriter]').forEach(el => scrollObserver.observe(el));
+// Enregistre les cibles typewriter et count-up
+document.querySelectorAll('[data-typewriter], [data-count]').forEach(el => scrollObserver.observe(el));
