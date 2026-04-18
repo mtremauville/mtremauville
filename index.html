@@ -22,7 +22,7 @@
   <section id="hero">
     <p class="greeting">Salut, moi c'est</p>
     <h1>Mickael.<br><span class="highlight">Ai Software Developer<span class="cursor"></span></span></h1>
-    <p>Développeur Ruby on Rails & AI</p>
+    <p>Développeur Ruby on Rails &amp; AI</p>
     <p class="tagline">Je crée des applications web avec Ruby on Rails, une touche de pixel art, et beaucoup de passion.</p>
     <div class="cta-buttons">
       <a href="#projects" class="btn">Voir mes projets</a>
@@ -349,17 +349,6 @@
     <p style="margin-top: 0.5rem;">© 2026 tremic.</p>
   </footer>
 
-  <script>
-    // Scroll animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

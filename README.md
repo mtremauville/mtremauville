@@ -18,12 +18,32 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 
 ### 🔧 What I build with
 
-```
-Backend        Ruby on Rails 8 · PostgreSQL · Devise · ActiveRecord
-Frontend       JavaScript · Vue.js · Stimulus JS · HTML · CSS/SCSS · Bootstrap
-AI / LLM       ruby_llm · Claude API · OpenAI API · SSE Streaming
-Tools          Git · GitHub · Heroku · Figma · VS Code
-```
+**Backend**
+![Rails](https://img.shields.io/badge/Rails_8-CC0000?logo=rubyonrails&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Devise](https://img.shields.io/badge/Devise-CC0000?logo=ruby&logoColor=white)
+![ActiveRecord](https://img.shields.io/badge/ActiveRecord-CC0000?logo=ruby&logoColor=white)
+
+**Frontend**
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=white)
+![Stimulus](https://img.shields.io/badge/Stimulus_JS-77E8B9?logo=stimulus&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/CSS%2FSCSS-CC6699?logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
+
+**AI / LLM**
+![ruby_llm](https://img.shields.io/badge/ruby__llm-CC0000?logo=ruby&logoColor=white)
+![Claude API](https://img.shields.io/badge/Claude_API-D4A27F?logo=anthropic&logoColor=black)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?logo=openai&logoColor=white)
+![SSE](https://img.shields.io/badge/SSE_Streaming-0A0A0A?logoColor=white)
+
+**Tools**
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+![Heroku](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white)
 
 ---
 
@@ -52,7 +72,7 @@ I can **code a POC in the morning and demo it to a CTO in the afternoon**. That'
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/mickael-tremauville/)
 - 🌐 [tremic.fr](https://tremic.fr)
-- 📧 [Send me a message](https://www.linkedin.com/in/mickael-tremauville/)
+- 📧 [Send me a message](mailto:mickael.tremauville@gmail.com)
 
 ---
 
