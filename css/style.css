@@ -344,62 +344,23 @@ section {
 }
 
 .project-card {
-  position: relative;
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-/* Blob coloré derrière chaque card */
-.project-card::before {
-  content: '';
-  position: absolute;
-  inset: -32px;
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.55;
-  filter: blur(48px);
-  animation: blob-spin 10s linear infinite;
-}
-
-/* GlowrIA — rose / violet */
-.project-card.featured::before {
-  background: conic-gradient(from 0deg, #f472b6, #a855f7, #818cf8, #ec4899, #f472b6);
-  animation-duration: 12s;
-  inset: -40px;
-  opacity: 0.5;
-}
-
-/* Padel Maestro — bleu / cyan */
-.project-card:nth-child(2)::before {
-  background: conic-gradient(from 120deg, #60a5fa, #06b6d4, #38bdf8, #3b82f6, #60a5fa);
-  animation-duration: 9s;
-  animation-direction: reverse;
-}
-
-/* PokéPlant — vert / menthe */
-.project-card:nth-child(3)::before {
-  background: conic-gradient(from 240deg, #34d399, #a3e635, #2dd4bf, #10b981, #34d399);
-  animation-duration: 14s;
-}
-
-@keyframes blob-spin {
-  to { transform: rotate(360deg); }
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.08);
+  transform: translateY(-3px);
 }
 
 .project-card.featured {
   grid-column: 1 / -1;
+  background: var(--accent-light);
+  border-color: rgba(37, 99, 235, 0.2);
 }
 
 .project-meta {
@@ -511,38 +472,12 @@ section {
 }
 
 .contact-inner {
-  position: relative;
   max-width: 1100px;
   margin: 0 auto 4rem;
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: var(--surface);
   border-radius: 24px;
   padding: 6rem 4rem;
   text-align: center;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-.contact-inner::before {
-  content: '';
-  position: absolute;
-  inset: -60px;
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.45;
-  filter: blur(70px);
-  background: conic-gradient(
-    from 0deg,
-    #f472b6,
-    #a855f7,
-    #60a5fa,
-    #34d399,
-    #fbbf24,
-    #f472b6
-  );
-  animation: blob-spin 16s linear infinite;
 }
 
 #contact .section-label {
