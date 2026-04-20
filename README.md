@@ -8,7 +8,7 @@
 
 ### 🧭 The short version
 
-I spent 22 years at **FNAC** and **Apple Store** turning complex tech into buying decisions for thousands of customers. In 2026, I graduated from **Le Wagon's AI Software Engineering bootcamp** (RNCP Level 6) and started building for real.
+I spent 22 years at **FNAC** and **Apple Store** turning complex tech into buying decisions for thousands of customers. In 2026, I graduated from **Le Wagon's AI Software bootcamp** (RNCP Level 6) and started building for real.
 
 I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual background — hands-on development + two decades of customer-facing tech expertise — becomes a real asset.
 
