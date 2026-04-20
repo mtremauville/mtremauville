@@ -19,6 +19,7 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 ### 🔧 What I build with
 
 **Backend**
+
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=white)
 ![Rails](https://img.shields.io/badge/Rails_8-CC0000?logo=rubyonrails&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
@@ -26,6 +27,7 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 ![ActiveRecord](https://img.shields.io/badge/ActiveRecord-CC0000?logo=ruby&logoColor=white)
 
 **Frontend**
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=white)
 ![Stimulus](https://img.shields.io/badge/Stimulus_JS-77E8B9?logo=stimulus&logoColor=black)
@@ -36,12 +38,14 @@ I'm looking for a **Solutions Engineer / Sales Engineer** role where my dual bac
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
 **AI / LLM**
+
 ![ruby_llm](https://img.shields.io/badge/ruby__llm-CC0000?logo=ruby&logoColor=white)
 ![Claude API](https://img.shields.io/badge/Claude_API-D4A27F?logo=anthropic&logoColor=black)
 ![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?logo=openai&logoColor=white)
 ![SSE](https://img.shields.io/badge/SSE_Streaming-0A0A0A?logoColor=white)
 
 **Tools**
+
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
 ![Heroku](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=white)
