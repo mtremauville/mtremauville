@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mickaël Tremauville — Solutions Engineer · Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="#" class="logo">Mickael Tremauville<span class="accent">.</span>dev</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" data-i18n="nav.about">Profil</a></li>
+      <li><a href="#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+      <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button id="lang-toggle" class="nav-btn icon-btn">EN</button>
+      <button id="theme-toggle" class="nav-btn icon-btn" aria-label="toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a href="mailto:mickael.tremauville@gmail.com" class="btn-cta" data-i18n="nav.cta">Contactez-moi</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-left fade-in">
+      <p class="hero-available">
+        <span class="pulse-dot"></span>
+        <span data-i18n="hero.available">Disponible</span>
+      </p>
+      <h1 data-i18n="hero.h1">Je construis la tech.<br><span class="accent">Je la vends aussi.</span></h1>
+      <p class="hero-desc" data-i18n="hero.desc">Développeur Fullstack Ruby on Rails &amp; IA, certifié RNCP Niv. 6 (Le Wagon 2026). 22 ans de conseil tech client — je maîtrise le cycle complet et intègre nativement les LLMs.</p>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary" data-i18n="hero.btn1">Mes services</a>
+        <a href="#projects" class="btn-ghost" data-i18n="hero.btn2">Voir mes projets →</a>
+        <a href="https://drive.google.com/file/d/1heiyOQ0FCLchOINSmVCzCHihZ20KB4HY/view?usp=drive_link" target="_blank" rel="noopener" class="btn-cv" data-i18n="hero.cv">
+          <i class="fa-solid fa-file-arrow-down"></i> CV
+        </a>
+      </div>
+      <div class="hero-badges">
+        <span><i class="fa-solid fa-location-dot"></i> Paris</span>
+        <span>🇫🇷 FR · 🇬🇧 EN</span>
+        <span><i class="fa-solid fa-certificate"></i> Le Wagon AI 2026</span>
+      </div>
+    </div>
+    <div class="hero-right fade-in">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="term-dot red"></span>
+          <span class="term-dot yellow"></span>
+          <span class="term-dot green"></span>
+          <span class="terminal-title">mickael@portfolio — bash</span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS TICKER ── -->
+  <div class="ticker-wrapper" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-inner" id="ticker-inner">
+        <span class="tick-item"><i class="devicon-ruby-plain colored"></i> Ruby</span>
+        <span class="tick-item"><i class="devicon-rails-plain colored"></i> Rails 8</span>
+        <span class="tick-item"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+        <span class="tick-item"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+        <span class="tick-item"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+        <span class="tick-item"><i class="devicon-react-original colored"></i> React</span>
+        <span class="tick-item"><i class="devicon-vuejs-plain colored"></i> Vue.js</span>
+        <span class="tick-item"><i class="devicon-html5-plain colored"></i> HTML5</span>
+        <span class="tick-item"><i class="devicon-sass-original colored"></i> SCSS</span>
+        <span class="tick-item"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+        <span class="tick-item"><i class="devicon-git-plain colored"></i> Git</span>
+        <span class="tick-item"><i class="devicon-github-original colored"></i> GitHub</span>
+        <span class="tick-item"><i class="devicon-figma-plain colored"></i> Figma</span>
+        <span class="tick-item"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+        <span class="tick-item"><i class="devicon-heroku-original colored"></i> Heroku</span>
+        <span class="tick-item"><i class="devicon-openai-plain colored"></i> OpenAI</span>
+        <!-- duplicate for seamless loop -->
+        <span class="tick-item"><i class="devicon-ruby-plain colored"></i> Ruby</span>
+        <span class="tick-item"><i class="devicon-rails-plain colored"></i> Rails 8</span>
+        <span class="tick-item"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+        <span class="tick-item"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+        <span class="tick-item"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+        <span class="tick-item"><i class="devicon-react-original colored"></i> React</span>
+        <span class="tick-item"><i class="devicon-vuejs-plain colored"></i> Vue.js</span>
+        <span class="tick-item"><i class="devicon-html5-plain colored"></i> HTML5</span>
+        <span class="tick-item"><i class="devicon-sass-original colored"></i> SCSS</span>
+        <span class="tick-item"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+        <span class="tick-item"><i class="devicon-git-plain colored"></i> Git</span>
+        <span class="tick-item"><i class="devicon-github-original colored"></i> GitHub</span>
+        <span class="tick-item"><i class="devicon-figma-plain colored"></i> Figma</span>
+        <span class="tick-item"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+        <span class="tick-item"><i class="devicon-heroku-original colored"></i> Heroku</span>
+        <span class="tick-item"><i class="devicon-openai-plain colored"></i> OpenAI</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-header fade-in">
+      <span class="section-tag">— 01</span>
+      <h2 data-i18n="about.h2">Profil</h2>
+    </div>
+    <div class="about-grid">
+
+      <div class="about-text fade-in">
+        <p data-i18n="about.p1">Développeur fullstack Ruby on Rails, certifié RNCP Niveau 6 (Le Wagon Paris, 2026). Maîtrise le cycle complet : modélisation ActiveRecord, API REST, authentification Devise, déploiement en production. Intègre nativement les LLMs via ruby_llm, OpenAI et Claude API — agents IA, traitement d'images, recommandations personnalisées.</p>
+        <p data-i18n="about.p2">Vingt-deux ans de conseil technique client : une capacité à comprendre un besoin métier, le traduire en specs fonctionnelles et communiquer avec des équipes non-techniques.</p>
+        <p class="about-cta" data-i18n="about.p3">Opérationnel sur un projet client dès le premier jour.</p>
+      </div>
+
+      <div class="about-xp fade-in">
+
+        <div class="xp-item">
+          <div class="xp-left">
+            <div class="xp-icon"><i class="fa-solid fa-store"></i></div>
+            <div class="xp-line"></div>
+          </div>
+          <div class="xp-right">
+            <span class="xp-date" data-i18n="xp1.date">2002 — Présent</span>
+            <strong data-i18n="xp1.role">Expert Technique &amp; Conseil Client</strong>
+            <span class="xp-company" data-i18n="xp1.company">FNAC</span>
+            <p data-i18n="xp1.desc">Référent micro-informatique — recueil du besoin client, traduction en solutions accessibles, formation des équipes juniors, pilotage de KPIs commerciaux.</p>
+          </div>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-left">
+            <div class="xp-icon"><i class="fa-brands fa-apple"></i></div>
+            <div class="xp-line"></div>
+          </div>
+          <div class="xp-right">
+            <span class="xp-date" data-i18n="xp2.date">2016 — 2017</span>
+            <strong data-i18n="xp2.role">Spécialiste Technique</strong>
+            <span class="xp-company" data-i18n="xp2.company">Apple Store</span>
+            <p data-i18n="xp2.desc">Diagnostic et réparation de composants Apple en environnement certifié. Accompagnement client iOS et macOS.</p>
+          </div>
+        </div>
+
+        <div class="xp-item">
+          <div class="xp-left">
+            <div class="xp-icon accent-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          </div>
+          <div class="xp-right">
+            <span class="xp-date" data-i18n="xp3.date">01/2026 — 03/2026</span>
+            <strong data-i18n="xp3.role">Bootcamp AI Software Engineering</strong>
+            <span class="xp-company" data-i18n="xp3.company">Le Wagon Paris · RNCP Niveau 6</span>
+            <p data-i18n="xp3.desc">Formation intensive 9 semaines — Rails, PostgreSQL, JavaScript, Hotwire, API REST, déploiement. Stack IA : ruby_llm, OpenAI API, Claude API, agents IA, Vision AI.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section id="services">
+    <div class="section-header fade-in">
+      <span class="section-tag">— 02</span>
+      <h2 data-i18n="services.title">Ce que je propose</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+        <h3 data-i18n="service1.title">Solutions Engineering</h3>
+        <p data-i18n="service1.desc">Je fais le pont entre vos équipes tech et vos clients. Démos techniques, POCs, intégrations personnalisées.</p>
+        <ul class="service-features">
+          <li data-i18n="service1.f1">Démos techniques &amp; pre-sales</li>
+          <li data-i18n="service1.f2">Proof of Concept sur mesure</li>
+          <li data-i18n="service1.f3">Support client post-vente</li>
+        </ul>
+      </div>
+
+      <div class="service-card featured fade-in">
+        <div class="service-badge" data-i18n="service.badge">Le plus demandé</div>
+        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+        <h3 data-i18n="service2.title">Développement Full-Stack</h3>
+        <p data-i18n="service2.desc">Applications web de A à Z — backend solide, frontend soigné, déployé et documenté.</p>
+        <ul class="service-features">
+          <li data-i18n="service2.f1">Rails 8 · PostgreSQL</li>
+          <li data-i18n="service2.f2">React · Vue.js · JavaScript</li>
+          <li data-i18n="service2.f3">Déploiement cloud (Heroku)</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3 data-i18n="service3.title">Intégration IA / LLM</h3>
+        <p data-i18n="service3.desc">Ajoutez de l'intelligence à votre produit : agents, analyse, génération de contenu.</p>
+        <ul class="service-features">
+          <li data-i18n="service3.f1">OpenAI API · Claude API</li>
+          <li data-i18n="service3.f2">Streaming · agents autonomes</li>
+          <li data-i18n="service3.f3">RAG · fine-tuning · prompting</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-header fade-in">
+      <span class="section-tag">— 03</span>
+      <h2 data-i18n="projects.title">Projets récents</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured fade-in">
+        <div class="service-badge" data-i18n="proj.wip">En développement actif</div>
+        <div class="project-top">
+          <span class="project-label">Rails 8 · Hotwire · TMDB API</span>
+          <div class="project-links">
+            <a href="https://github.com/mtremauville/nextwatch" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <h3><span class="accent">//</span> WatchNext</h3>
+        <p data-i18n="project1.desc">Compagnon streaming personnel — recherche via TMDB API, navigation Hotwire/Turbo sans rechargement, recommandations IA en cours d'intégration.</p>
+        <div class="project-tags">
+          <span>Rails 8</span><span>Hotwire</span><span>Turbo</span><span>TMDB</span><span>ruby_llm</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-top">
+          <span class="project-label">IA · Rails · SSE Streaming</span>
+          <div class="project-links">
+            <a href="https://github.com/mtremauville/glowria" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <h3><span class="accent">//</span> GlowrIA</h3>
+        <p data-i18n="project2.desc">Analyseur d'ingrédients cosmétiques IA — modélisation ActiveRecord des incompatibilités, LLM avec streaming SSE via ruby_llm, déployé Heroku.</p>
+        <div class="project-tags">
+          <span>Rails 8</span><span>ruby_llm</span><span>OpenAI</span><span>SSE</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-top">
+          <span class="project-label">Vision IA · Équipe · Rails</span>
+          <div class="project-links">
+            <a href="https://github.com/mtremauville/pokeplant" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <h3><span class="accent">//</span> PokéPlant</h3>
+        <p data-i18n="project3.desc">Entretien de plantes par IA — front-end complet, authentification Devise, Git flow en équipe de 4 devs, déployé en production.</p>
+        <div class="project-tags">
+          <span>Rails 8</span><span>OpenAI Api</span><span>Bootstrap</span><span>JavaScript</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── STACK ── -->
+  <section id="stack">
+    <div class="section-header fade-in">
+      <span class="section-tag">— 04</span>
+      <h2 data-i18n="stack.title">Ma stack</h2>
+    </div>
+    <div class="stack-grid">
+
+      <div class="stack-group fade-in">
+        <h4 data-i18n="stack.backend">Backend</h4>
+        <div class="stack-items">
+          <div class="stack-item"><i class="devicon-ruby-plain colored"></i><span>Ruby on Rails</span></div>
+          <div class="stack-item"><i class="devicon-rails-plain colored"></i><span>Rails 8</span></div>
+          <div class="stack-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+          <div class="stack-item"><span class="stack-icon-text">D</span><span>Devise</span></div>
+          <div class="stack-item"><i class="devicon-heroku-original colored"></i><span>Heroku</span></div>
+          <div class="stack-item"><span class="stack-icon-text">☁</span><span>Cloudinary</span></div>
+        </div>
+      </div>
+
+      <div class="stack-group fade-in">
+        <h4 data-i18n="stack.frontend">Frontend</h4>
+        <div class="stack-items">
+          <div class="stack-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="stack-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+          <div class="stack-item"><i class="devicon-vuejs-plain colored"></i><span>Vue.js</span></div>
+          <div class="stack-item"><span class="stack-icon-text">⚡</span><span>Stimulus JS</span></div>
+          <div class="stack-item"><span class="stack-icon-text">↺</span><span>Hotwire/Turbo</span></div>
+          <div class="stack-item"><i class="devicon-html5-plain colored"></i><span>HTML/CSS</span></div>
+          <div class="stack-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+        </div>
+      </div>
+
+      <div class="stack-group fade-in">
+        <h4 data-i18n="stack.ai">AI / LLM</h4>
+        <div class="stack-items">
+          <div class="stack-item"><i class="devicon-openai-plain colored"></i><span>OpenAI API</span></div>
+          <div class="stack-item"><span class="stack-icon-text">λ</span><span>Claude API</span></div>
+          <div class="stack-item"><span class="stack-icon-text">⇌</span><span>ruby_llm</span></div>
+          <div class="stack-item"><span class="stack-icon-text">~</span><span>SSE Streaming</span></div>
+          <div class="stack-item"><span class="stack-icon-text">⚙</span><span>Agents IA</span></div>
+          <div class="stack-item"><span class="stack-icon-text">⬡</span><span>ActionCable</span></div>
+        </div>
+      </div>
+
+      <div class="stack-group fade-in">
+        <h4 data-i18n="stack.tools">Outils</h4>
+        <div class="stack-items">
+          <div class="stack-item"><i class="devicon-git-plain colored"></i><span>Git / GitHub</span></div>
+          <div class="stack-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+          <div class="stack-item"><i class="devicon-slack-plain colored"></i><span>Slack</span></div>
+          <div class="stack-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-inner fade-in">
+      <span class="section-tag">— 05</span>
+      <h2 data-i18n="contact.h2">Travaillons ensemble.</h2>
+      <p data-i18n="contact.p">Un projet, une mission, une démo à construire ? Écrivez-moi.</p>
+      <a href="mailto:mickael.tremauville@gmail.com" class="btn-primary btn-large" data-i18n="contact.btn">Envoyer un message</a>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/mickael-tremauville" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/mtremauville" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://tremic.fr" target="_blank" rel="noopener">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> tremic.fr
+        </a>
+        <a href="https://drive.google.com/file/d/1heiyOQ0FCLchOINSmVCzCHihZ20KB4HY/view?usp=drive_link" target="_blank" rel="noopener" data-i18n="contact.cv">
+          <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p data-i18n="footer">© 2026 Mickael Tremauville · Solutions Engineer · AI Full-Stack Developer</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
