@@ -8,7 +8,7 @@ const i18n = {
     'nav.cta':        'Contactez-moi',
 
     'hero.available': 'Disponible',
-    'hero.h1':        'Je construis la tech.<br><span class="accent">Je la vends aussi.</span>',
+    'hero.h1':        'Je vends la tech.<br><span class="accent-img">Je la contruis aussi.</span>',
     'hero.desc':      "Développeur Fullstack Ruby on Rails &amp; IA, certifié RNCP Niv. 6 (Le Wagon 2026). 22 ans de conseil tech client — je maîtrise le cycle complet et intègre nativement les LLMs.",
     'hero.btn1':      'Mes services',
     'hero.btn2':      'Voir mes projets →',
@@ -62,8 +62,8 @@ const i18n = {
     'stack.ai':       'AI / LLM',
     'stack.tools':    'Outils',
 
-    'contact.h2':  'Travaillons ensemble.',
-    'contact.p':   'Un projet, une mission, une démo à construire ? Contactez-moi.',
+    'contact.h2':  '<span class="accent-img">Travaillons ensemble.</span>',
+    'contact.p':   'Un projet, une mission, une démo à construire ?',
     'contact.btn': 'Contactez-moi',
 
     'footer': '© 2026 Mickaël Tremauville · Fullstack Rails · IA/LLM · Solution Builder',
@@ -76,7 +76,7 @@ const i18n = {
     'nav.cta':        'Contact me',
 
     'hero.available': 'Available',
-    'hero.h1':        'I build tech.<br><span class="accent">I sell it too.</span>',
+    'hero.h1':        'I build tech.<br><span class="accent-img">I sell it too.</span>',
     'hero.desc':      'Fullstack Ruby on Rails &amp; AI developer, RNCP Level 6 certified (Le Wagon 2026). 22 years in client-facing tech — I own the full cycle and natively integrate LLMs.',
     'hero.btn1':      'My services',
     'hero.btn2':      'See my projects →',
@@ -130,7 +130,7 @@ const i18n = {
     'stack.ai':       'AI / LLM',
     'stack.tools':    'Tools',
 
-    'contact.h2':  "Let's work together.",
+    'contact.h2':  '<span class="accent-img">Let\'s work together.</span>',
     'contact.p':   'A project, a mission, a demo to build? Contact me.',
     'contact.btn': 'Send me a message',
 
