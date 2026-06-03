@@ -598,11 +598,11 @@ section {
 
 /* ── Skills Ticker ── */
 .ticker-wrapper {
+  margin-top: 15px;
   overflow: hidden;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--bg-secondary);
-  padding: 12px 0;
   position: relative;
   z-index: 1;
 }
@@ -617,7 +617,11 @@ section {
 .ticker-wrapper::before { left: 0; background: linear-gradient(to right, var(--bg-secondary), transparent); }
 .ticker-wrapper::after  { right: 0; background: linear-gradient(to left, var(--bg-secondary), transparent); }
 
-.ticker-track { overflow: hidden; }
+.ticker-track {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
 
 .ticker-inner {
   display: flex;
@@ -635,8 +639,11 @@ section {
 .tick-item {
   display: inline-flex;
   align-items: center;
+
   gap: 7px;
   padding: 0 22px;
+  padding-top: 3px;
+  padding-bottom: 3px;;
   font-size: 0.82rem;
   font-weight: 500;
   color: var(--text-muted);
