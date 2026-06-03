@@ -1,22 +1,22 @@
 // ── i18n ──
 const i18n = {
   fr: {
-    'nav.about':      'Profil',
-    'nav.services':   'Compétences',
-    'nav.projects':   'Projets',
-    'nav.stack':      'Stack',
+    'nav.about':      '<span class="snav-line"></span>Profil',
+    'nav.services':   '<span class="snav-line"></span>Compétences',
+    'nav.projects':   '<span class="snav-line"></span>Projets',
+    'nav.stack':      '<span class="snav-line"></span>Stack',
     'nav.cta':        'Contactez-moi',
 
-    'hero.available': 'En recherche active',
-    'hero.h1':        'Je construis.<br><span class="accent-img">Je cherche où progresser.</span>',
-    'hero.desc':      "Développeur Fullstack Junior — Rails 8, JavaScript, IA. Certifié RNCP Niv. 6 (Le Wagon 2026). 22 ans de conseil tech : je comprends le besoin métier, je livre le code, je m'intègre vite dans une équipe.",
+    'hero.available': 'En recherche active · CDI',
     'hero.btn1':      'Voir mes projets',
     'hero.btn2':      'Me contacter →',
     'hero.cv':        '<i class="fa-solid fa-file-arrow-down"></i> CV',
     'contact.cv':     '<i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV',
+    'sidebar.role':    '<span class="accent-img">Développeur Fullstack &amp; IA Junior</span>',
+    'sidebar.tagline': 'Rails 8 · JavaScript · IA<br>Le Wagon Paris 2026 · RNCP Niv. 6',
 
     'about.h2':      'Profil',
-    'about.p1':      "Développeur fullstack Ruby on Rails, certifié RNCP Niveau 6 (Le Wagon Paris, 2026). Je maîtrise le cycle complet : modélisation ActiveRecord, API REST, authentification Devise, déploiement en production. Je sais aussi intégrer des LLMs nativement via ruby_llm, OpenAI et Claude API.",
+    'about.p1':      "Développeur fullstack Ruby on Rails & IA, certifié RNCP Niveau 6 (Le Wagon Paris, 2026). Je maîtrise le cycle complet : modélisation ActiveRecord, API REST, authentification Devise, déploiement en production. Je sais aussi intégrer des LLMs nativement via ruby_llm, OpenAI et Claude API.",
     'about.p2':      "Mon expérience en conseil technique aux clients à la FNAC et Apple m'ont appris à comprendre un besoin métier, à communiquer avec des équipes non-techniques et à m'adapter vite à de nouveaux contextes.",
     'about.p3':      "Opérationnel dès le premier jour — je cherche une équipe où apprendre et contribuer.",
     'xp1.date':      '2002 — Présent',
@@ -68,25 +68,26 @@ const i18n = {
     'form.nom':          'Nom *',
     'form.email':        'Adresse mail *',
     'form.message':      'Message *',
-    'form.send':         'Envoyer le message',
+    'form.send':         'Contactez-moi',
     'form.success':      'Message envoyé ! Je vous répondrai dans les plus brefs délais.',
     'form.error':        "Une erreur s'est produite. Réessayez ou écrivez-moi directement.",
     'form.err.required': 'Ce champ est obligatoire.',
     'form.err.email':    'Adresse mail invalide.',
     'form.err.minlen':   'Minimum 10 caractères.',
 
-    'footer': '© 2026 Mickaël Tremauville · Développeur Fullstack Junior · Open to work',
+    'footer': '© 2026 Mickaël Tremauville · Développeur Fullstack & IA Junior · Open to work',
   },
   en: {
-    'nav.about':      'Profile',
-    'nav.services':   'Skills',
-    'nav.projects':   'Projects',
-    'nav.stack':      'Stack',
+    'nav.about':      '<span class="snav-line"></span>Profile',
+    'nav.services':   '<span class="snav-line"></span>Skills',
+    'nav.projects':   '<span class="snav-line"></span>Projects',
+    'nav.stack':      '<span class="snav-line"></span>Stack',
     'nav.cta':        'Contact me',
 
-    'hero.available': 'Available',
-    'hero.h1':        'I build.<br><span class="accent-img">Looking to grow.</span>',
-    'hero.desc':      'Junior Fullstack Developer — Rails 8, JavaScript, AI. RNCP Level 6 certified (Le Wagon 2026). 22 years in client-facing tech: I understand business needs, ship code, and integrate fast into a team.',
+    'hero.available': 'Actively looking · Full-time',
+    'sidebar.role':    '<span class="accent-img">Junior Fullstack &amp; AI Developer</span>',
+    'sidebar.tagline': 'Rails 8 · JavaScript · AI<br>Le Wagon Paris 2026 · RNCP Level 6',
+    'hero.desc':      'Junior Fullstack & AI Developer — Rails 8, JavaScript, AI. RNCP Level 6 certified (Le Wagon 2026). 22 years in client-facing tech: I understand business needs, ship code, and integrate fast into a team.',
     'hero.btn1':      'See my projects',
     'hero.btn2':      'Get in touch →',
     'hero.cv':        '<i class="fa-solid fa-file-arrow-down"></i> Resume',
@@ -145,14 +146,14 @@ const i18n = {
     'form.nom':          'Last name *',
     'form.email':        'Email address *',
     'form.message':      'Message *',
-    'form.send':         'Send message',
+    'form.send':         'Contact Me',
     'form.success':      "Message sent! I'll get back to you shortly.",
     'form.error':        'An error occurred. Try again or reach me directly.',
     'form.err.required': 'This field is required.',
     'form.err.email':    'Invalid email address.',
     'form.err.minlen':   'Minimum 10 characters.',
 
-    'footer': '© 2026 Mickaël Tremauville · Junior Fullstack Developer · Open to work',
+    'footer': '© 2026 Mickaël Tremauville · Junior Fullstack & AI Developer · Open to work',
   }
 };
 
@@ -190,67 +191,6 @@ const terminalSequence = {
   ]
 };
 
-let terminalDone = false;
-
-function runTerminal(lang) {
-  const body = document.getElementById('terminal-body');
-  if (!body) return;
-  body.innerHTML = '';
-  terminalDone = false;
-
-  const lines = terminalSequence[lang] || terminalSequence.fr;
-  const CHAR_SPEED = 38;
-  const CMD_PAUSE  = 280;
-  const OUT_PAUSE  = 60;
-
-  let cursor = document.createElement('span');
-  cursor.className = 'term-cursor';
-
-  function appendLine(className, text) {
-    const span = document.createElement('span');
-    span.className = `term-line ${className}`;
-    span.textContent = text;
-    body.appendChild(span);
-    body.appendChild(document.createElement('br'));
-  }
-
-  function typeCmd(text, cb) {
-    const span = document.createElement('span');
-    span.className = 'term-line term-cmd';
-    body.appendChild(span);
-    body.appendChild(cursor);
-
-    let i = 0;
-    function tick() {
-      if (i < text.length) {
-        span.textContent += text[i++];
-        setTimeout(tick, CHAR_SPEED + (Math.random() * 18 | 0));
-      } else {
-        body.appendChild(document.createElement('br'));
-        setTimeout(cb, CMD_PAUSE);
-      }
-    }
-    tick();
-  }
-
-  function processLines(index) {
-    if (index >= lines.length) {
-      body.appendChild(cursor);
-      terminalDone = true;
-      return;
-    }
-
-    const line = lines[index];
-    if (line.type === 'cmd') {
-      typeCmd(line.text, () => processLines(index + 1));
-    } else {
-      appendLine('term-out', line.text);
-      setTimeout(() => processLines(index + 1), OUT_PAUSE);
-    }
-  }
-
-  setTimeout(() => processLines(0), 400);
-}
 
 // ── Theme ──
 let currentTheme = localStorage.getItem('theme') || 'dark';
@@ -277,10 +217,6 @@ function setLanguage(lang) {
   });
   const btn = document.getElementById('lang-toggle');
   if (btn) btn.textContent = lang === 'fr' ? 'EN' : 'FR';
-
-  if (terminalDone || document.getElementById('terminal-body').children.length === 0) {
-    runTerminal(lang);
-  }
 }
 
 // ── Scroll fade-in observer ──
@@ -294,35 +230,38 @@ const fadeObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 
-// ── Mobile nav hamburger ──
-function initHamburger() {
-  const btn   = document.getElementById('hamburger');
-  const links = document.getElementById('nav-links');
-  if (!btn || !links) return;
+// ── Scroll spy (sidebar nav active state) ──
+function initScrollSpy() {
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const navLinks = document.querySelectorAll('.snav-item');
+  if (!sections.length || !navLinks.length) return;
 
-  btn.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
-    btn.classList.toggle('open', open);
-    btn.setAttribute('aria-expanded', open);
-  });
+  function setActive(id) {
+    navLinks.forEach(l => l.classList.remove('active'));
+    const link = document.querySelector(`.snav-item[href="#${id}"]`);
+    if (link) link.classList.add('active');
+  }
 
-  links.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      links.classList.remove('open');
-      btn.classList.remove('open');
+  function onScroll() {
+    const trigger = window.scrollY + window.innerHeight * 0.3;
+    let current = sections[0].id;
+    for (const section of sections) {
+      const top = section.getBoundingClientRect().top + window.scrollY;
+      if (top <= trigger) current = section.id;
+    }
+    setActive(current);
+  }
+
+  // Active immédiat au clic
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const id = link.getAttribute('href')?.slice(1);
+      if (id) setActive(id);
     });
   });
-}
 
-// ── Navbar scroll shadow ──
-function initNavScroll() {
-  const nav = document.getElementById('navbar');
-  if (!nav) return;
-  window.addEventListener('scroll', () => {
-    nav.style.borderBottomColor = window.scrollY > 10
-      ? 'var(--border-h)'
-      : 'var(--border)';
-  }, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 }
 
 // ── Particles ──
@@ -345,8 +284,8 @@ function initParticles() {
   function themeColors() {
     const dark = document.documentElement.getAttribute('data-theme') !== 'light';
     return dark
-      ? { dot: 'rgba(0,229,195,', line: 'rgba(0,229,195,' }
-      : { dot: 'rgba(204,52,45,', line: 'rgba(204,52,45,' };
+      ? { dot: 'rgba(100,255,218,', line: 'rgba(100,255,218,' }
+      : { dot: 'rgba(124,58,237,',  line: 'rgba(124,58,237,' };
   }
 
   function mkParticle() {
@@ -494,8 +433,7 @@ function initContactForm() {
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme);
   setLanguage(currentLang);
-  initHamburger();
-  initNavScroll();
+  initScrollSpy();
   initParticles();
   initContactForm();
 

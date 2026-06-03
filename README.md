@@ -2,7 +2,7 @@
 
 **Solutions Engineer** · Full-Stack Developer · AI/LLM Integrator
 
-> 22 years explaining and selling tech to people. Now I build it — and help companies ship it to their customers.
+> After explaining and selling tech to people. Now I build it — and help companies ship it to their customers.
 
 ---
 
