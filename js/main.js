@@ -63,8 +63,17 @@ const i18n = {
     'stack.tools':    'Outils',
 
     'contact.h2':  '<span class="accent-img">Travaillons ensemble.</span>',
-    'contact.p':   'Un projet, une mission, une démo à construire ?',
-    'contact.btn': 'Contactez-moi',
+    'contact.p':   'Un projet, une mission, une démo à construire ? Écrivez-moi.',
+    'form.prenom':       'Prénom *',
+    'form.nom':          'Nom *',
+    'form.email':        'Adresse mail *',
+    'form.message':      'Message *',
+    'form.send':         'Envoyer le message',
+    'form.success':      'Message envoyé ! Je vous répondrai dans les plus brefs délais.',
+    'form.error':        "Une erreur s'est produite. Réessayez ou écrivez-moi directement.",
+    'form.err.required': 'Ce champ est obligatoire.',
+    'form.err.email':    'Adresse mail invalide.',
+    'form.err.minlen':   'Minimum 10 caractères.',
 
     'footer': '© 2026 Mickaël Tremauville · Fullstack Rails · IA/LLM · Solution Builder',
   },
@@ -131,8 +140,17 @@ const i18n = {
     'stack.tools':    'Tools',
 
     'contact.h2':  '<span class="accent-img">Let\'s work together.</span>',
-    'contact.p':   'A project, a mission, a demo to build? Contact me.',
-    'contact.btn': 'Send me a message',
+    'contact.p':   'A project, a mission, a demo to build? Write to me.',
+    'form.prenom':       'First name *',
+    'form.nom':          'Last name *',
+    'form.email':        'Email address *',
+    'form.message':      'Message *',
+    'form.send':         'Send message',
+    'form.success':      "Message sent! I'll get back to you shortly.",
+    'form.error':        'An error occurred. Try again or reach me directly.',
+    'form.err.required': 'This field is required.',
+    'form.err.email':    'Invalid email address.',
+    'form.err.minlen':   'Minimum 10 characters.',
 
     'footer': '© 2026 Mickaël Tremauville · Fullstack Rails · AI/LLM · Solution Builder',
   }
@@ -386,6 +404,90 @@ function initParticles() {
   window.addEventListener('resize', () => { resize(); }, { passive: true });
 }
 
+// ── Contact form ──
+const APPS_SCRIPT_URL = 'VOTRE_URL_GOOGLE_APPS_SCRIPT';
+
+const EMAIL_REGEX = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+
+function sanitizeInput(str, maxLen) {
+  return String(str || '').trim().replace(/[<>"'`]/g, '').slice(0, maxLen);
+}
+
+function initContactForm() {
+  const form       = document.getElementById('contact-form');
+  const submitBtn  = document.getElementById('submit-btn');
+  const successEl  = document.getElementById('form-success');
+  const errorEl    = document.getElementById('form-error-msg');
+  const msgArea    = document.getElementById('message');
+  const charCount  = document.getElementById('char-count');
+  if (!form) return;
+
+  msgArea.addEventListener('input', () => {
+    charCount.textContent = msgArea.value.length;
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Honeypot — si rempli c'est un bot
+    if (document.getElementById('website').value) return;
+
+    const prenom  = sanitizeInput(document.getElementById('prenom').value,  50);
+    const nom     = sanitizeInput(document.getElementById('nom').value,     50);
+    const email   = sanitizeInput(document.getElementById('email').value,  100);
+    const message = sanitizeInput(document.getElementById('message').value, 1000);
+    const lang    = currentLang;
+    let valid = true;
+
+    function setFieldError(fieldId, msgKey) {
+      const errEl  = document.getElementById(fieldId + '-error');
+      const input  = document.getElementById(fieldId);
+      const msg    = msgKey ? (i18n[lang][msgKey] || '') : '';
+      errEl.textContent = msg;
+      input.classList.toggle('error', !!msgKey);
+      if (msgKey) valid = false;
+    }
+
+    setFieldError('prenom',  prenom  ? null : 'form.err.required');
+    setFieldError('nom',     nom     ? null : 'form.err.required');
+    setFieldError('email',
+      !email            ? 'form.err.required'
+      : !EMAIL_REGEX.test(email) ? 'form.err.email'
+      : null
+    );
+    setFieldError('message',
+      !message          ? 'form.err.required'
+      : message.length < 10 ? 'form.err.minlen'
+      : null
+    );
+
+    if (!valid) return;
+
+    // État chargement
+    submitBtn.disabled = true;
+    submitBtn.querySelector('.submit-text').style.display = 'none';
+    submitBtn.querySelector('.submit-spinner').style.display = 'inline-block';
+    successEl.style.display = 'none';
+    errorEl.style.display   = 'none';
+
+    try {
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode:   'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prenom, nom, email, message }),
+      });
+      form.style.display      = 'none';
+      successEl.style.display = 'flex';
+    } catch {
+      errorEl.style.display = 'flex';
+      submitBtn.disabled = false;
+      submitBtn.querySelector('.submit-text').style.display = 'inline';
+      submitBtn.querySelector('.submit-spinner').style.display = 'none';
+    }
+  });
+}
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme);
@@ -393,6 +495,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHamburger();
   initNavScroll();
   initParticles();
+  initContactForm();
 
   document.getElementById('theme-toggle').addEventListener('click', () =>
     setTheme(currentTheme === 'dark' ? 'light' : 'dark'));

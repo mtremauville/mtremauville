@@ -338,9 +338,57 @@
   <section id="contact">
     <div class="contact-inner fade-in">
       <span class="section-tag">— 05</span>
-      <h2 data-i18n="contact.h2">Travaillons ensemble.</h2>
-      <p data-i18n="contact.p">Un projet, une mission, une démo à construire ?</p>
-      <a href="mailto:mickael.tremauville@gmail.com" class="btn-primary btn-large" data-i18n="contact.btn">Envoyer un message</a>
+      <h2 data-i18n="contact.h2"><span class="accent-img">Travaillons ensemble.</span></h2>
+      <p data-i18n="contact.p">Un projet, une mission, une démo à construire ? Écrivez-moi.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <!-- Honeypot anti-spam -->
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom" data-i18n="form.prenom">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" autocomplete="given-name" maxlength="50">
+            <span class="field-error" id="prenom-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="nom" data-i18n="form.nom">Nom *</label>
+            <input type="text" id="nom" name="nom" autocomplete="family-name" maxlength="50">
+            <span class="field-error" id="nom-error"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-i18n="form.email">Adresse mail *</label>
+          <input type="email" id="email" name="email" autocomplete="email" maxlength="100">
+          <span class="field-error" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-i18n="form.message">Message *</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+          <div class="form-meta">
+            <span class="field-error" id="message-error"></span>
+            <span class="char-count"><span id="char-count">0</span>/1000</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary btn-large form-submit" id="submit-btn">
+          <span class="submit-text" data-i18n="form.send">Envoyer le message</span>
+          <i class="fa-solid fa-spinner fa-spin submit-spinner" style="display:none"></i>
+        </button>
+      </form>
+
+      <div class="form-feedback form-success" id="form-success" style="display:none">
+        <i class="fa-solid fa-circle-check"></i>
+        <p data-i18n="form.success">Message envoyé ! Je vous répondrai dans les plus brefs délais.</p>
+      </div>
+
+      <div class="form-feedback form-error-msg" id="form-error-msg" style="display:none">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p data-i18n="form.error">Une erreur s'est produite. Réessayez ou écrivez-moi directement.</p>
+      </div>
+
       <div class="social-links">
         <a href="https://linkedin.com/in/mickael-tremauville" target="_blank" rel="noopener">
           <i class="fa-brands fa-linkedin"></i> LinkedIn
