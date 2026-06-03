@@ -405,7 +405,7 @@ function initParticles() {
 }
 
 // ── Contact form ──
-const APPS_SCRIPT_URL = 'VOTRE_URL_GOOGLE_APPS_SCRIPT';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw6NGuM9Boc3EmlgOpPOpvyxk5HkoVzMacHN6gXJkzlBsdPaMPrKDr-skcc59SKN4I3Jg/exec';
 
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
 
