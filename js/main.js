@@ -471,12 +471,14 @@ function initContactForm() {
     errorEl.style.display   = 'none';
 
     try {
-      await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        mode:   'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prenom, nom, email, message }),
+      // Content-Type: text/plain évite le preflight CORS et permet à Apps Script de lire e.postData.contents
+      const resp   = await fetch(APPS_SCRIPT_URL, {
+        method:  'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body:    JSON.stringify({ prenom, nom, email, message }),
       });
+      const result = await resp.json();
+      if (!result.success) throw new Error(result.error || 'server_error');
       form.style.display      = 'none';
       successEl.style.display = 'flex';
     } catch {
