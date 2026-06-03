@@ -405,7 +405,7 @@ function initParticles() {
 }
 
 // ── Contact form ──
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw6NGuM9Boc3EmlgOpPOpvyxk5HkoVzMacHN6gXJkzlBsdPaMPrKDr-skcc59SKN4I3Jg/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz0euL3IKqC-_sHMq68uWTLerLImDANYjt4BLzCVaroAZZOYKXr0_6U3AK5HY_X2FBhFA/exec';
 
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
 
