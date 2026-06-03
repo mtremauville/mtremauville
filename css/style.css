@@ -134,6 +134,30 @@ img { display: block; max-width: 100%; }
   gap: 10px;
 }
 
+.sidebar-photo-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--accent), transparent 60%);
+  margin-bottom: 8px;
+}
+
+.sidebar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 13px;
+  display: block;
+  filter: grayscale(15%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.sidebar-photo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+
 .hero-available {
   display: inline-flex;
   align-items: center;
@@ -419,6 +443,11 @@ section {
   font-size: 0.9rem;
   color: var(--text-muted);
   line-height: 1.75;
+}
+
+.about-text strong {
+  color: var(--text);
+  font-weight: 600;
 }
 
 .about-cta {
