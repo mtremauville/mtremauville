@@ -1,6 +1,7 @@
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
 
 /* ── Variables dark ── */
 :root {
@@ -1082,27 +1083,66 @@ section, footer, .ticker-wrapper { position: relative; z-index: 1; }
     position: static;
     height: auto;
     width: 100%;
-    padding: 32px 0 20px;
+    padding: 20px 0;
     border-bottom: 1px solid var(--border);
   }
   .sidebar-inner {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: column;
+    gap: 0;
   }
-  .sidebar-header { flex: 1; min-width: 200px; }
-  .sidebar-nav { display: none; }
-  .sidebar-tagline { display: none; }
-  .sidebar-name { font-size: 1.6rem; }
+  .sidebar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .sidebar-name { font-size: 1.5rem; }
+  .sidebar-role { font-size: 0.9rem; }
+  .sidebar-tagline { font-size: 0.75rem; }
+  .hero-available { display: none; }
+
+  /* Nav mobile : overlay flottant au-dessus de la page */
+  .sidebar-nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg);
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 40px 24px;
+  }
+  .sidebar-nav.open { display: flex; }
+  .sidebar-nav.open .snav-item {
+    font-size: 1rem;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+    justify-content: center;
+  }
+  .sidebar-nav.open .snav-line { display: none; }
+
+  /* Footer mobile */
   .sidebar-footer {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    padding-top: 12px;
+    gap: 16px;
   }
-  .content {
-    padding: 40px 0;
+  .sidebar-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
+
+
+  .content { padding: 40px 0; }
   .ticker-wrapper { margin: 0 -20px; }
   .stack-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
