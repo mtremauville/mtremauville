@@ -200,10 +200,11 @@ function setTheme(theme) {
   currentTheme = theme;
   localStorage.setItem('theme', theme);
   document.documentElement.setAttribute('data-theme', theme);
-  const btn = document.getElementById('theme-toggle');
-  if (btn) btn.innerHTML = theme === 'dark'
-    ? '<i class="fa-solid fa-sun"></i>'
-    : '<i class="fa-solid fa-moon"></i>';
+  const icon = theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  ['theme-toggle', 'theme-toggle-menu'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) btn.innerHTML = icon;
+  });
 }
 
 // ── Language ──
@@ -215,8 +216,10 @@ function setLanguage(lang) {
     const val = i18n[lang][el.dataset.i18n];
     if (val !== undefined) el.innerHTML = val;
   });
-  const btn = document.getElementById('lang-toggle');
-  if (btn) btn.textContent = lang === 'fr' ? 'EN' : 'FR';
+  ['lang-toggle', 'lang-toggle-menu'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) btn.textContent = lang === 'fr' ? 'EN' : 'FR';
+  });
 }
 
 // ── Scroll fade-in observer ──
@@ -229,6 +232,43 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+// ── Hamburger mobile ──
+function initHamburger() {
+  const btn     = document.getElementById('hamburger-btn');
+  const nav     = document.getElementById('sidebar-nav');
+  const sidebar = document.querySelector('.sidebar');
+  if (!btn || !nav) return;
+
+  function open() {
+    if (sidebar) nav.style.paddingTop = (sidebar.offsetHeight + 16) + 'px';
+    nav.classList.add('open');
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+
+  function close() {
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+
+  // Ouvre/ferme via le burger
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    nav.classList.contains('open') ? close() : open();
+  });
+
+  // Ferme en cliquant en dehors du menu et du bouton
+  document.addEventListener('click', (e) => {
+    if (nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)) {
+      close();
+    }
+  });
+
+  // Ferme au clic sur un lien de navigation
+  nav.querySelectorAll('.snav-item').forEach(l => l.addEventListener('click', close));
+}
 
 // ── Scroll spy (sidebar nav active state) ──
 function initScrollSpy() {
@@ -500,14 +540,19 @@ function initScramble() {
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme);
   setLanguage(currentLang);
+  initHamburger();
   initScrollSpy();
   initScramble();
   initParticles();
   initContactForm();
 
-  document.getElementById('theme-toggle').addEventListener('click', () =>
-    setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+  ['theme-toggle', 'theme-toggle-menu'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+  });
 
-  document.getElementById('lang-toggle').addEventListener('click', () =>
-    setLanguage(currentLang === 'fr' ? 'en' : 'fr'));
+  ['lang-toggle', 'lang-toggle-menu'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => setLanguage(currentLang === 'fr' ? 'en' : 'fr'));
+  });
 });
