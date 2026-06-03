@@ -429,11 +429,79 @@ function initContactForm() {
   });
 }
 
+// ── Scramble effect ──
+const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&!?<>';
+
+function scrambleElement(el, duration = 900) {
+  if (el.dataset.scrambling) return;
+  el.dataset.scrambling = '1';
+
+  const nodes = [];
+
+  (function collect(node) {
+    for (const child of node.childNodes) {
+      if (child.nodeType === Node.TEXT_NODE && child.textContent.trim()) {
+        nodes.push({ node: child, original: child.textContent });
+      } else if (child.nodeType === Node.ELEMENT_NODE) {
+        collect(child);
+      }
+    }
+  })(el);
+
+  const start = performance.now();
+  let done = 0;
+
+  nodes.forEach(({ node, original }) => {
+    const chars = original.split('');
+
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const revealed = Math.floor(progress * chars.length);
+
+      node.textContent = chars.map((c, i) => {
+        if (i < revealed)             return c;
+        if (!c.match(/[a-zA-Z0-9]/)) return c;
+        return SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)];
+      }).join('');
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        node.textContent = original;
+        if (++done >= nodes.length) delete el.dataset.scrambling;
+      }
+    }
+
+    requestAnimationFrame(tick);
+  });
+}
+
+function initScramble() {
+  const headings = Array.from(document.querySelectorAll('h1, h2'))
+    .filter(el => !el.closest('#contact'));
+
+  // Scroll → une seule fois à l'entrée dans le viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);
+      scrambleElement(entry.target);
+    });
+  }, { threshold: 0.4 });
+
+  headings.forEach(el => {
+    observer.observe(el);
+    // Hover → rejoue à chaque passage de souris
+    el.addEventListener('mouseenter', () => scrambleElement(el));
+  });
+}
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme);
   setLanguage(currentLang);
   initScrollSpy();
+  initScramble();
   initParticles();
   initContactForm();
 
