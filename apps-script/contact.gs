@@ -1,6 +1,7 @@
 // ── Configuration ──
-const RECIPIENT  = 'mickael.tremauville@gmail.com';
-const SHEET_NAME = 'Contacts';
+const RECIPIENT       = 'mickael.tremauville@gmail.com';
+const SPREADSHEET_ID  = '12O31dUZNZAGdMOlGFCtfDFTxpHbP9YICWRKz7LRCxno';
+const SHEET_NAME      = 'contacts'; // Nom exact de l'onglet dans votre Sheet
 
 // ── Point d'entrée POST ──
 function doPost(e) {
@@ -19,8 +20,8 @@ function doPost(e) {
     }
 
     // Écriture dans Google Sheets
-    const ss    = SpreadsheetApp.getActiveSpreadsheet();
-    const sheet = ss.getSheetByName(SHEET_NAME) || ss.getActiveSheet();
+    const ss    = SpreadsheetApp.openById(SPREADSHEET_ID);
+    const sheet = ss.getSheetByName(SHEET_NAME) || ss.getSheets()[0];
     sheet.appendRow([
       Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'dd/MM/yyyy HH:mm'),
       prenom,
