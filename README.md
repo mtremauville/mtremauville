@@ -1,6 +1,6 @@
 # 👋 Hey, I'm Mickaël
 
-**Solutions Engineer** · Full-Stack Developer · AI/LLM Integrator
+**Dev Support Engineer** · Full-Stack Developer · AI/LLM Integrator
 
 > After explaining and selling tech to people. Now I build it — and help companies ship it to their customers.
 
@@ -10,7 +10,7 @@
 
 I spent 22 years at **FNAC** and **Apple Store** turning complex tech into buying decisions for thousands of customers. In 2026, I graduated from **Le Wagon's AI Software Engineering bootcamp** (RNCP Level 6) and started building for real.
 
-I'm looking for a **Solution Engineer** role where my dual background — hands-on development + two decades of customer-facing tech expertise — becomes a real asset.
+I'm looking for a **Junior Developer Support Engineer** role where my dual background — hands-on development + two decades of customer-facing tech expertise — becomes a real asset.
 
 📍 Paris area · 🇫🇷 French (native) · 🇬🇧 English (fluent) · 🌐 [tremic.fr](https://tremic.fr)
 
