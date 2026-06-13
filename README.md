@@ -83,4 +83,4 @@ I can **code a POC in the morning and demo it to a CTO in the afternoon**. That'
 
 ---
 
-<sub>Looking for a **Solutions Engineer / Sales Engineer / Developer Advocate** role · Paris area · Available now</sub>
+<sub>Looking for a **Customer Success Engineer / Dev Support Engineer ** role · Paris area · Available now</sub>
