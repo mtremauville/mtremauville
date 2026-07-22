@@ -54,7 +54,7 @@ function buildLevelPath(steps) {
 }
 
 const LEVELS = [
-  { name: 'easy', speed: 3.0, steps: [{ dir: 'N', count: 5 }, { dir: 'E', count: 4 }, { dir: 'N', count: 5 }] },
+  { name: 'easy', speed: 2.0, steps: [{ dir: 'N', count: 5 }, { dir: 'E', count: 4 }, { dir: 'N', count: 5 }] },
   { name: 'medium', speed: 3.6, steps: [{ dir: 'N', count: 3 }, { dir: 'E', count: 3 }, { dir: 'N', count: 3 }, { dir: 'W', count: 2 }, { dir: 'N', count: 4 }, { dir: 'E', count: 5 }] },
   { name: 'hard', speed: 4.4, steps: [{ dir: 'N', count: 2 }, { dir: 'E', count: 2 }, { dir: 'N', count: 2 }, { dir: 'W', count: 2 }, { dir: 'N', count: 2 }, { dir: 'E', count: 2 }, { dir: 'N', count: 2 }, { dir: 'W', count: 2 }, { dir: 'N', count: 3 }, { dir: 'E', count: 4 }] },
 ];
