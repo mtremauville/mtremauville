@@ -73,6 +73,7 @@ const i18n = {
     'github.less':    'Moins',
     'github.more':    'Plus',
 
+    'ipod.intro': "Un lecteur musical construit en CSS/JS pur, hommage à la molette cliquable de l'iPod. Fais glisser ton doigt (ou ta souris) autour de la molette pour naviguer, clique au centre pour sélectionner.",
     'ipod.hint': 'MENU pour revenir en arrière · glisse la molette pour naviguer/régler le volume · clique au centre pour sélectionner',
 
     'scanner.intro': "Scanne un produit avec ta caméra ou saisis son code-barres — les infos sont récupérées en direct via Open Food Facts, la base de données alimentaire libre et collaborative.",
@@ -178,6 +179,7 @@ const i18n = {
     'github.less':    'Less',
     'github.more':    'More',
 
+    'ipod.intro': 'A music player built with pure CSS/JS, a tribute to the iPod\'s clickable wheel. Drag your finger (or mouse) around the wheel to navigate, click the center to select.',
     'ipod.hint': 'MENU to go back · drag the wheel to navigate/adjust volume · click the center to select',
 
     'scanner.intro': 'Scan a product with your camera or type in its barcode — details are fetched live from Open Food Facts, the free and collaborative food database.',
