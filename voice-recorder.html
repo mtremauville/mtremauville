@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictaphone — Mickaël Tremauville</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/voice-recorder.css" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="subpage">
+
+    <div class="subpage-bar">
+      <a href="index.html" class="btn-ghost"><i class="fa-solid fa-arrow-left"></i> Retour au portfolio</a>
+      <div class="nav-controls subpage-controls">
+        <button id="lang-toggle" class="ctrl-btn">EN</button>
+        <button id="theme-toggle" class="ctrl-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="subpage-intro fade-in">
+      <span class="section-tag">— side project</span>
+      <h1>Dictaphone <span class="accent-img">Vocal</span></h1>
+      <p data-i18n="voice.intro">Enregistre ta voix, obtiens la transcription en direct, puis enregistre l'audio et/ou le texte sur ton appareil.</p>
+    </div>
+
+    <div class="subpage-stage fade-in">
+
+      <div class="recorder-app">
+
+        <div class="recorder-visual">
+          <div class="recorder-timer" id="recorder-timer">00:00</div>
+          <div class="recorder-level" id="recorder-level"></div>
+        </div>
+
+        <button id="recorder-toggle-btn" class="record-btn" aria-label="Démarrer l'enregistrement">
+          <span class="record-btn-shape"></span>
+        </button>
+        <p class="record-btn-label" id="record-btn-label" data-i18n="voice.start">Démarrer l'enregistrement</p>
+
+        <p class="scanner-camera-error" id="recorder-error"></p>
+
+        <div class="transcript-wrap">
+          <label class="transcript-label" for="transcript-text" data-i18n="voice.transcriptLabel">Transcription</label>
+          <textarea id="transcript-text" rows="6"></textarea>
+          <p class="transcript-note" id="transcript-note"></p>
+        </div>
+
+        <div class="recorder-playback" id="recorder-playback" style="display:none">
+          <audio id="recorder-audio" controls></audio>
+        </div>
+
+        <div class="recorder-actions">
+          <button id="recorder-new-btn" class="btn-ghost" style="display:none">
+            <i class="fa-solid fa-rotate-left"></i> <span data-i18n="voice.new">Nouvel enregistrement</span>
+          </button>
+          <button id="recorder-save-audio-btn" class="btn-ghost" style="display:none">
+            <i class="fa-solid fa-download"></i> <span data-i18n="voice.saveAudio">Enregistrer l'audio</span>
+          </button>
+          <button id="recorder-save-text-btn" class="btn-primary" style="display:none">
+            <i class="fa-solid fa-file-lines"></i> <span data-i18n="voice.saveText">Enregistrer le texte</span>
+          </button>
+        </div>
+
+      </div>
+
+      <p class="subpage-hint" data-i18n="voice.hint">Tout se passe dans ton navigateur — aucun audio n'est envoyé à un serveur. La transcription automatique fonctionne mieux sur Chrome/Edge.</p>
+
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/voice-recorder.js"></script>
+</body>
+</html>
