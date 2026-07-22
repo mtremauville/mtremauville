@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPod — Mickaël Tremauville</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/ipod.css" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="subpage">
+
+    <div class="subpage-bar">
+      <a href="index.html" class="btn-ghost"><i class="fa-solid fa-arrow-left"></i> Retour au portfolio</a>
+      <div class="nav-controls subpage-controls">
+        <button id="lang-toggle" class="ctrl-btn">EN</button>
+        <button id="theme-toggle" class="ctrl-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="subpage-intro fade-in">
+      <span class="section-tag">— side project</span>
+      <h1>iPod <span class="accent-img">Classic</span></h1>
+      <p>Un lecteur musical construit en CSS/JS pur, hommage à la molette cliquable de l'iPod. Fais glisser ton doigt (ou ta souris) autour de la molette pour naviguer, clique au centre pour sélectionner.</p>
+    </div>
+
+    <div class="subpage-stage fade-in">
+      <div class="ipod-device" id="ipod-device">
+
+        <div class="ipod-screen">
+          <div class="ipod-screen-header">
+            <span class="ipod-screen-title" id="ipod-title">iPod</span>
+            <span class="ipod-screen-status">
+              <i class="fa-solid fa-volume-high" id="ipod-volume-icon"></i>
+              <i class="fa-solid fa-battery-three-quarters"></i>
+            </span>
+          </div>
+          <div class="ipod-screen-body" id="ipod-screen-body" aria-live="polite"></div>
+        </div>
+
+        <div class="ipod-wheel" id="ipod-wheel">
+          <span class="wheel-label label-menu">MENU</span>
+          <span class="wheel-label label-prev"><i class="fa-solid fa-backward-step"></i></span>
+          <span class="wheel-label label-next"><i class="fa-solid fa-forward-step"></i></span>
+          <span class="wheel-label label-play"><i class="fa-solid fa-play"></i></span>
+          <button class="wheel-center" id="wheel-center" aria-label="Select"></button>
+        </div>
+
+      </div>
+
+      <p class="subpage-hint" data-i18n="ipod.hint">MENU pour revenir en arrière · glisse la molette pour naviguer/régler le volume · clique au centre pour sélectionner</p>
+    </div>
+
+    <audio id="ipod-audio" preload="metadata"></audio>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/ipod.js"></script>
+</body>
+</html>

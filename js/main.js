@@ -5,6 +5,7 @@ const i18n = {
     'nav.services':   '<span class="snav-line"></span>Compétences',
     'nav.projects':   '<span class="snav-line"></span>Projets',
     'nav.stack':      '<span class="snav-line"></span>Stack',
+    'nav.github':     '<span class="snav-line"></span>GitHub',
     'nav.cta':        'Contactez-moi',
 
     'hero.available': 'En recherche active · CDI',
@@ -52,6 +53,10 @@ const i18n = {
 
     'projects.title': 'Projets récents',
     'proj.wip':       'En développement actif',
+    'proj.demo':      'Démo interactive',
+    'project6.desc':  'Photobooth dans le navigateur — capture caméra, filtres en direct, rendu polaroid (cadre + légende manuscrite), enregistrement et partage natif ou par email.',
+    'project5.desc':  'Scanner de codes-barres dans le navigateur — décodage EAN/UPC via la caméra, recherche produit en direct sur Open Food Facts, historique local.',
+    'project4.desc':  'Lecteur musical hommage à l\'iPod Classic — molette cliquable en CSS/JS pur (drag circulaire, détection de zones), menu de navigation, lecture audio avec Web Audio.',
     'project1.desc':  'Compagnon streaming personnel — recherche via TMDB API, navigation Hotwire/Turbo sans rechargement, recommandations IA en cours d\'intégration.',
     'project2.desc':  'Analyseur d\'ingrédients cosmétiques IA — modélisation ActiveRecord des incompatibilités, LLM avec streaming SSE via ruby_llm, déployé Heroku.',
     'project3.desc':  'Reconnaissance de plantes par vision IA — front-end complet, authentification Devise, Git flow en équipe de 4 devs, déployé en production.',
@@ -61,6 +66,28 @@ const i18n = {
     'stack.frontend': 'Frontend',
     'stack.ai':       'AI / LLM',
     'stack.tools':    'Outils',
+
+    'github.title':   'Activité GitHub',
+    'github.loading': "Chargement de l'activité...",
+    'github.error':   "Impossible de charger l'activité GitHub.",
+    'github.less':    'Moins',
+    'github.more':    'Plus',
+
+    'ipod.hint': 'MENU pour revenir en arrière · glisse la molette pour naviguer/régler le volume · clique au centre pour sélectionner',
+
+    'scanner.intro': "Scanne un produit avec ta caméra ou saisis son code-barres — les infos sont récupérées en direct via Open Food Facts, la base de données alimentaire libre et collaborative.",
+    'scanner.start': 'Démarrer la caméra',
+    'scanner.stop':  'Arrêter',
+    'scanner.or':    'ou saisis un code-barres',
+    'scanner.hint':  "Base Open Food Facts — couvre surtout les produits alimentaires. Ton code-barres n'est envoyé qu'à Open Food Facts, jamais stocké ailleurs.",
+
+    'polaroid.intro':  "Prends une photo avec ta caméra, applique un filtre, et obtiens un polaroid prêt à enregistrer, partager ou envoyer par mail.",
+    'polaroid.start':  'Démarrer la caméra',
+    'polaroid.retake': 'Reprendre',
+    'polaroid.save':   'Enregistrer',
+    'polaroid.share':  'Partager',
+    'polaroid.email':  'Email',
+    'polaroid.hint':   "Tout se passe dans ton navigateur — aucune photo n'est envoyée sur un serveur. Le partage utilise le menu natif de ton appareil.",
 
     'contact.h2':  '<span class="accent-img">Travaillons ensemble</span>',
     'contact.p':   'Disponible pour un poste junior en CDI — Paris ou remote. Discutons-en.',
@@ -82,6 +109,7 @@ const i18n = {
     'nav.services':   '<span class="snav-line"></span>Skills',
     'nav.projects':   '<span class="snav-line"></span>Projects',
     'nav.stack':      '<span class="snav-line"></span>Stack',
+    'nav.github':     '<span class="snav-line"></span>GitHub',
     'nav.cta':        'Contact me',
 
     'hero.available': 'Actively looking · Full-time',
@@ -130,6 +158,10 @@ const i18n = {
 
     'projects.title': 'Recent projects',
     'proj.wip':       'Actively in development',
+    'proj.demo':      'Interactive demo',
+    'project6.desc':  'A browser-based photobooth — camera capture, live filters, polaroid rendering (frame + handwritten caption), save and share natively or by email.',
+    'project5.desc':  'A browser-based barcode scanner — EAN/UPC decoding via the camera, live product lookup on Open Food Facts, local scan history.',
+    'project4.desc':  'A tribute music player to the iPod Classic — pure CSS/JS click wheel (circular drag, zone detection), navigation menu, audio playback with Web Audio.',
     'project1.desc':  'Personal streaming companion — TMDB API search, Hotwire/Turbo navigation without page reload, AI recommendations in progress.',
     'project2.desc':  'AI cosmetic ingredient analyzer — ActiveRecord modeling of incompatibilities, LLM with SSE streaming via ruby_llm, deployed on Heroku.',
     'project3.desc':  'AI plant care — full front-end, Devise auth, Git flow in a 4-dev team, shipped to production.',
@@ -139,6 +171,28 @@ const i18n = {
     'stack.frontend': 'Frontend',
     'stack.ai':       'AI / LLM',
     'stack.tools':    'Tools',
+
+    'github.title':   'GitHub activity',
+    'github.loading': 'Loading activity...',
+    'github.error':   'Could not load GitHub activity.',
+    'github.less':    'Less',
+    'github.more':    'More',
+
+    'ipod.hint': 'MENU to go back · drag the wheel to navigate/adjust volume · click the center to select',
+
+    'scanner.intro': 'Scan a product with your camera or type in its barcode — details are fetched live from Open Food Facts, the free and collaborative food database.',
+    'scanner.start': 'Start camera',
+    'scanner.stop':  'Stop',
+    'scanner.or':    'or type in a barcode',
+    'scanner.hint':  "Open Food Facts database — mostly covers food products. Your barcode is only ever sent to Open Food Facts, never stored elsewhere.",
+
+    'polaroid.intro':  'Take a photo with your camera, apply a filter, and get a polaroid ready to save, share or email.',
+    'polaroid.start':  'Start camera',
+    'polaroid.retake': 'Retake',
+    'polaroid.save':   'Save',
+    'polaroid.share':  'Share',
+    'polaroid.email':  'Email',
+    'polaroid.hint':   "Everything happens in your browser — no photo is ever sent to a server. Sharing uses your device's native menu.",
 
     'contact.h2':  '<span class="accent-img">Let\'s work together</span>',
     'contact.p':   'Available for a junior position — full-time. Paris or remote. Let\'s talk.',
@@ -220,6 +274,7 @@ function setLanguage(lang) {
     const btn = document.getElementById(id);
     if (btn) btn.textContent = lang === 'fr' ? 'EN' : 'FR';
   });
+  updateGithubTotalLabel();
 }
 
 // ── Scroll fade-in observer ──
@@ -536,6 +591,50 @@ function initScramble() {
   });
 }
 
+// ── GitHub contributions ──
+let githubTotalCount = null;
+
+function updateGithubTotalLabel() {
+  const totalEl = document.getElementById('github-total');
+  if (!totalEl || githubTotalCount === null) return;
+  totalEl.textContent = currentLang === 'fr'
+    ? `${githubTotalCount} contributions cette année`
+    : `${githubTotalCount} contribution${githubTotalCount === 1 ? '' : 's'} in the last year`;
+}
+
+function initGithubCalendar() {
+  const grid = document.getElementById('contrib-grid');
+  const totalEl = document.getElementById('github-total');
+  if (!grid) return;
+
+  fetch('https://github-contributions-api.jogruber.de/v4/mtremauville?y=last')
+    .then(res => {
+      if (!res.ok) throw new Error('GitHub contributions request failed');
+      return res.json();
+    })
+    .then(data => {
+      const days = data.contributions || [];
+      grid.classList.remove('is-loading');
+      grid.innerHTML = '';
+      const frag = document.createDocumentFragment();
+      days.forEach(day => {
+        const cell = document.createElement('span');
+        cell.className = 'contrib-cell';
+        cell.dataset.level = day.level;
+        cell.title = `${day.date} · ${day.count} contribution${day.count === 1 ? '' : 's'}`;
+        frag.appendChild(cell);
+      });
+      grid.appendChild(frag);
+
+      githubTotalCount = data.total?.lastYear ?? days.reduce((sum, d) => sum + d.count, 0);
+      updateGithubTotalLabel();
+    })
+    .catch(() => {
+      grid.classList.remove('is-loading');
+      if (totalEl) totalEl.textContent = i18n[currentLang]['github.error'];
+    });
+}
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme);
@@ -545,6 +644,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScramble();
   initParticles();
   initContactForm();
+  initGithubCalendar();
 
   ['theme-toggle', 'theme-toggle-menu'].forEach(id => {
     const el = document.getElementById(id);

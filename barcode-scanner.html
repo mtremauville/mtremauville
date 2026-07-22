@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scanner de codes-barres — Mickaël Tremauville</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/barcode.css" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="subpage">
+
+    <div class="subpage-bar">
+      <a href="index.html" class="btn-ghost"><i class="fa-solid fa-arrow-left"></i> Retour au portfolio</a>
+      <div class="nav-controls subpage-controls">
+        <button id="lang-toggle" class="ctrl-btn">EN</button>
+        <button id="theme-toggle" class="ctrl-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="subpage-intro fade-in">
+      <span class="section-tag">— side project</span>
+      <h1>Scanner de <span class="accent-img">codes-barres</span></h1>
+      <p data-i18n="scanner.intro">Scanne un produit avec ta caméra ou saisis son code-barres — les infos sont récupérées en direct via Open Food Facts, la base de données alimentaire libre et collaborative.</p>
+    </div>
+
+    <div class="subpage-stage fade-in">
+
+      <div class="scanner-card">
+        <div class="scanner-camera-wrap">
+          <div id="scanner-reader"></div>
+          <div class="scanner-scan-line" id="scanner-scan-line" aria-hidden="true"></div>
+          <div class="scanner-placeholder" id="scanner-placeholder">
+            <i class="fa-solid fa-barcode"></i>
+          </div>
+        </div>
+
+        <div class="scanner-camera-controls">
+          <button id="scanner-start-btn" class="btn-primary">
+            <i class="fa-solid fa-camera"></i> <span data-i18n="scanner.start">Démarrer la caméra</span>
+          </button>
+          <button id="scanner-stop-btn" class="btn-ghost" style="display:none">
+            <i class="fa-solid fa-stop"></i> <span data-i18n="scanner.stop">Arrêter</span>
+          </button>
+        </div>
+        <p class="scanner-camera-error" id="scanner-camera-error"></p>
+
+        <div class="scanner-divider"><span data-i18n="scanner.or">ou saisis un code-barres</span></div>
+
+        <form id="scanner-manual-form" class="scanner-manual-form">
+          <input type="text" inputmode="numeric" autocomplete="off" id="scanner-manual-input" maxlength="14">
+          <button type="submit" class="btn-ghost" aria-label="Rechercher"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+
+      <div class="scanner-result" id="scanner-result"></div>
+
+      <div class="scanner-history" id="scanner-history"></div>
+
+      <p class="subpage-hint" data-i18n="scanner.hint">Base Open Food Facts — couvre surtout les produits alimentaires. Ton code-barres n'est envoyé qu'à Open Food Facts, jamais stocké ailleurs.</p>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/barcode.js"></script>
+</body>
+</html>

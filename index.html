@@ -77,6 +77,7 @@
           <a href="#services" class="snav-item" data-i18n="nav.services"><span class="snav-line"></span>Compétences</a>
           <a href="#projects" class="snav-item" data-i18n="nav.projects"><span class="snav-line"></span>Projets</a>
           <a href="#stack"    class="snav-item" data-i18n="nav.stack"><span class="snav-line"></span>Stack</a>
+          <a href="#github"   class="snav-item" data-i18n="nav.github"><span class="snav-line"></span>GitHub</a>
           <a href="#contact"  class="snav-item"><span class="snav-line"></span>Contact</a>
           <div class="nav-socials">
             <a href="https://github.com/mtremauville" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -247,6 +248,63 @@
             <div class="project-row-body">
               <div class="project-row-header">
                 <h3>
+                  <a href="polaroid-camera.html">
+                    Photobooth Polaroid <i class="fa-solid fa-camera-retro fa-xs"></i>
+                  </a>
+                </h3>
+              </div>
+              <p data-i18n="project6.desc">Photobooth dans le navigateur — capture caméra, filtres en direct, rendu polaroid (cadre + légende manuscrite), enregistrement et partage natif ou par email.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>Canvas API</span><span>Web Share API</span><span class="project-status wip" data-i18n="proj.demo">Démo interactive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-row-meta">
+              <span class="project-date">2026</span>
+            </div>
+            <div class="project-row-body">
+              <div class="project-row-header">
+                <h3>
+                  <a href="barcode-scanner.html">
+                    Scanner de codes-barres <i class="fa-solid fa-barcode fa-xs"></i>
+                  </a>
+                </h3>
+              </div>
+              <p data-i18n="project5.desc">Scanner de codes-barres dans le navigateur — décodage EAN/UPC via la caméra, recherche produit en direct sur Open Food Facts, historique local.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>getUserMedia</span><span>Open Food Facts API</span><span class="project-status wip" data-i18n="proj.demo">Démo interactive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-row-meta">
+              <span class="project-date">2026</span>
+            </div>
+            <div class="project-row-body">
+              <div class="project-row-header">
+                <h3>
+                  <a href="music-player.html">
+                    iPod Music Player <i class="fa-solid fa-headphones fa-xs"></i>
+                  </a>
+                </h3>
+              </div>
+              <p data-i18n="project4.desc">Lecteur musical hommage à l'iPod Classic — molette cliquable en CSS/JS pur (drag circulaire, détection de zones), menu de navigation, lecture audio avec Web Audio.</p>
+              <div class="project-tags">
+                <span>JavaScript</span><span>CSS</span><span>Web Audio API</span><span class="project-status wip" data-i18n="proj.demo">Démo interactive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-row fade-in">
+            <div class="project-row-meta">
+              <span class="project-date">2026</span>
+            </div>
+            <div class="project-row-body">
+              <div class="project-row-header">
+                <h3>
                   <a href="https://github.com/mtremauville/nextwatch" target="_blank" rel="noopener">
                     WatchNext <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
                   </a>
@@ -360,10 +418,40 @@
         </div>
       </section>
 
+      <!-- ── GITHUB ── -->
+      <section id="github">
+        <div class="section-header fade-in">
+          <span class="section-tag">— 05</span>
+          <h2 data-i18n="github.title">Activité GitHub</h2>
+        </div>
+        <div class="github-card fade-in">
+          <div class="github-card-header">
+            <a href="https://github.com/mtremauville" target="_blank" rel="noopener" class="github-handle">
+              <i class="fa-brands fa-github"></i> @mtremauville
+            </a>
+            <span class="github-total" id="github-total" data-i18n="github.loading">Chargement de l'activité...</span>
+          </div>
+          <div class="contrib-scroll">
+            <div class="contrib-grid is-loading" id="contrib-grid" aria-hidden="true"></div>
+          </div>
+          <div class="github-card-footer">
+            <span data-i18n="github.less">Moins</span>
+            <div class="contrib-legend">
+              <span class="contrib-cell" data-level="0"></span>
+              <span class="contrib-cell" data-level="1"></span>
+              <span class="contrib-cell" data-level="2"></span>
+              <span class="contrib-cell" data-level="3"></span>
+              <span class="contrib-cell" data-level="4"></span>
+            </div>
+            <span data-i18n="github.more">Plus</span>
+          </div>
+        </div>
+      </section>
+
       <!-- ── CONTACT ── -->
       <section id="contact">
         <div class="contact-inner fade-in">
-          <span class="section-tag">— 05</span>
+          <span class="section-tag">— 06</span>
           <h2 data-i18n="contact.h2"><span class="accent-img">Travaillons ensemble</span></h2>
           <p data-i18n="contact.p">Disponible pour un poste junior en CDI, CDD ou alternance — Paris ou remote. Discutons-en.</p>
 

@@ -1,0 +1,203 @@
+/* ── App card ── */
+.polaroid-app {
+  width: 100%;
+  max-width: 440px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Camera ── */
+.camera-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+}
+
+#camera-video,
+#pixelate-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+#camera-video.mirrored { transform: scaleX(-1); }
+#camera-video.pixel-hidden { opacity: 0; }
+
+#pixelate-canvas {
+  display: none;
+  image-rendering: pixelated;
+}
+#pixelate-canvas.active { display: block; }
+
+.camera-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: var(--text-dim);
+  pointer-events: none;
+}
+.camera-placeholder.hidden { display: none; }
+
+.camera-flip-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background 0.2s;
+}
+.camera-flip-btn:hover { background: rgba(0,0,0,0.65); }
+
+/* ── Filters ── */
+.filter-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 340px;
+  margin-top: 14px;
+  padding-bottom: 2px;
+}
+
+.filter-pill {
+  flex-shrink: 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-size: 0.76rem;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.filter-pill:hover { color: var(--text); }
+.filter-pill.active {
+  border-color: var(--accent-border);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+/* ── Controls ── */
+.camera-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.shutter-btn {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 3px solid var(--text);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s, border-color 0.2s;
+}
+.shutter-btn:hover { border-color: var(--accent); }
+.shutter-btn:active { transform: scale(0.94); }
+.shutter-btn-ring {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--text);
+  transition: background 0.2s;
+}
+.shutter-btn:hover .shutter-btn-ring { background: var(--accent); }
+
+.scanner-camera-error {
+  color: var(--red);
+  font-size: 0.78rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.scanner-camera-error:empty { display: none; }
+
+/* ── Polaroid result ── */
+.polaroid-result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.polaroid-card {
+  background: #fbfaf6;
+  padding: 16px 16px 54px;
+  border-radius: 2px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35), 0 2px 6px rgba(0,0,0,0.15);
+  transform: rotate(-1.5deg);
+  max-width: 300px;
+  width: 100%;
+}
+
+.polaroid-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: #ddd;
+}
+
+.polaroid-caption {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  border: none;
+  background: transparent;
+  outline: none;
+  text-align: center;
+  color: #2b2b2b;
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.polaroid-caption::placeholder { color: #b8b3a5; }
+
+.polaroid-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.polaroid-share-note {
+  margin-top: 10px;
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  text-align: center;
+  max-width: 320px;
+}
+.polaroid-share-note:empty { display: none; }
