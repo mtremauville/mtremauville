@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Perfect — Mickaël Tremauville</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/cube-runner.css" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="subpage subpage-wide">
+
+    <div class="subpage-bar">
+      <a href="index.html" class="btn-ghost"><i class="fa-solid fa-arrow-left"></i> Retour au portfolio</a>
+      <div class="nav-controls subpage-controls">
+        <button id="lang-toggle" class="ctrl-btn">EN</button>
+        <button id="theme-toggle" class="ctrl-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="subpage-intro fade-in">
+      <span class="section-tag">— side project</span>
+      <h1>Pixel <span class="accent-img">Perfect</span></h1>
+      <p data-i18n="cube.intro">Un cube 3D qui suit un chemin — tourne au bon moment pour rester sur la piste et rejoins l'arrivée le plus vite possible. Une erreur, et tu tombes dans le vide.</p>
+    </div>
+
+    <div class="subpage-stage fade-in">
+
+      <div class="cube-app">
+
+        <div class="cube-levels" id="cube-levels">
+          <button type="button" class="cube-level-btn active" data-level="0">
+            <span data-i18n="cube.level.easy">Facile</span>
+          </button>
+          <button type="button" class="cube-level-btn" data-level="1">
+            <span data-i18n="cube.level.medium">Moyen</span>
+          </button>
+          <button type="button" class="cube-level-btn" data-level="2">
+            <span data-i18n="cube.level.hard">Difficile</span>
+          </button>
+        </div>
+
+        <div class="cube-canvas-wrap" id="cube-canvas-wrap">
+          <canvas id="cube-canvas"></canvas>
+
+          <div class="cube-hud">
+            <div class="cube-hud-time" id="cube-hud-time">0.00s</div>
+            <div class="cube-hud-best" id="cube-hud-best"></div>
+          </div>
+
+          <div class="cube-overlay" id="cube-overlay">
+            <p class="cube-overlay-title" data-i18n="cube.ready">Prêt ?</p>
+            <p class="cube-overlay-text" data-i18n="cube.readyHint">Utilise ← / → (ou les boutons tactiles) pour tourner aux virages.</p>
+            <button type="button" class="btn-primary" id="cube-start-btn" data-i18n="cube.startBtn">Démarrer</button>
+          </div>
+
+          <div class="cube-touch-controls" id="cube-touch-controls">
+            <button type="button" class="cube-touch-btn" id="cube-touch-left" aria-label="Tourner à gauche"><i class="fa-solid fa-arrow-left"></i></button>
+            <button type="button" class="cube-touch-btn" id="cube-touch-right" aria-label="Tourner à droite"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="subpage-hint" data-i18n="cube.hint">Tout tourne en local dans ton navigateur (Three.js/WebGL) — tes meilleurs temps sont sauvegardés sur cet appareil.</p>
+
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script type="module" src="js/cube-runner.js"></script>
+</body>
+</html>
