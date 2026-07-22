@@ -11,6 +11,47 @@
   align-items: center;
 }
 
+/* ── Spoken language picker ── */
+.voice-lang-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.voice-lang-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.voice-lang-pills { display: flex; gap: 8px; }
+
+.lang-pill {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-size: 0.78rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.lang-pill:hover { color: var(--text); }
+.lang-pill.active {
+  border-color: var(--accent-border);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.voice-lang-picker.disabled .lang-pill {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 /* ── Visual: timer + level meter ── */
 .recorder-visual {
   display: flex;

@@ -21,7 +21,21 @@ function initVoiceRecorder() {
   const newBtn        = document.getElementById('recorder-new-btn');
   const saveAudioBtn  = document.getElementById('recorder-save-audio-btn');
   const saveTextBtn   = document.getElementById('recorder-save-text-btn');
+  const langPicker    = document.getElementById('voice-lang-picker');
+  const langPills     = langPicker ? Array.from(langPicker.querySelectorAll('.lang-pill')) : [];
   if (!toggleBtn || !transcriptEl) return;
+
+  // Spoken language for recognition — deliberately independent from the site's FR/EN
+  // display toggle (currentLang), which persists across all pages via localStorage and
+  // has nothing to do with what language the user is about to speak into the mic.
+  let spokenLang = voiceLang();
+  langPills.forEach(pill => {
+    pill.classList.toggle('active', pill.dataset.lang === spokenLang);
+    pill.addEventListener('click', () => {
+      spokenLang = pill.dataset.lang;
+      langPills.forEach(p => p.classList.toggle('active', p === pill));
+    });
+  });
 
   // Build level meter bars
   const bars = [];
@@ -101,7 +115,7 @@ function initVoiceRecorder() {
     const r = new SpeechRecognitionCtor();
     r.continuous = true;
     r.interimResults = true;
-    r.lang = voiceLang() === 'fr' ? 'fr-FR' : 'en-US';
+    r.lang = spokenLang === 'fr' ? 'fr-FR' : 'en-US';
 
     r.onresult = (e) => {
       let interim = '';
@@ -172,6 +186,7 @@ function initVoiceRecorder() {
         try { startLevelMeter(stream); } catch { /* level meter is a visual extra, never block recording on it */ }
 
         toggleBtn.classList.add('recording');
+        if (langPicker) langPicker.classList.add('disabled');
         toggleLabel.textContent = voiceLang() === 'fr' ? "Arrêter l'enregistrement" : 'Stop recording';
 
         if (SpeechRecognitionCtor) {
@@ -204,6 +219,7 @@ function initVoiceRecorder() {
 
     toggleBtn.classList.remove('recording');
     toggleLabel.textContent = voiceLang() === 'fr' ? "Démarrer l'enregistrement" : 'Start recording';
+    if (langPicker) langPicker.classList.remove('disabled');
   }
 
   function toggleRecording() {

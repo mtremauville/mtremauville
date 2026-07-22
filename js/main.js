@@ -92,6 +92,7 @@ const i18n = {
     'polaroid.hint':   "Tout se passe dans ton navigateur — aucune photo n'est envoyée sur un serveur. Le partage utilise le menu natif de ton appareil.",
 
     'voice.intro':           "Enregistre ta voix, obtiens la transcription en direct, puis enregistre l'audio et/ou le texte sur ton appareil.",
+    'voice.spokenLang':      'Langue parlée',
     'voice.start':           "Démarrer l'enregistrement",
     'voice.transcriptLabel': 'Transcription',
     'voice.new':             'Nouvel enregistrement',
@@ -207,6 +208,7 @@ const i18n = {
     'polaroid.hint':   "Everything happens in your browser — no photo is ever sent to a server. Sharing uses your device's native menu.",
 
     'voice.intro':           'Record your voice, get a live transcript, then save the audio and/or the text to your device.',
+    'voice.spokenLang':      'Spoken language',
     'voice.start':           'Start recording',
     'voice.transcriptLabel': 'Transcript',
     'voice.new':             'New recording',
