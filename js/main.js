@@ -106,7 +106,7 @@ const i18n = {
     'cube.level.medium': 'Moyen',
     'cube.level.hard':   'Difficile',
     'cube.ready':        'Prêt ?',
-    'cube.readyHint':     'Utilise ← / → (ou les boutons tactiles) pour tourner aux virages.',
+    'cube.readyHint':     'Utilise ← / → (ou Q / D, ou les boutons tactiles) pour tourner aux virages.',
     'cube.startBtn':     'Démarrer',
     'cube.hint':         'Tout tourne en local dans ton navigateur (Three.js/WebGL) — tes meilleurs temps sont sauvegardés sur cet appareil.',
 

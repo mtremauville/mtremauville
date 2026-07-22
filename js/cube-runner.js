@@ -4,6 +4,7 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.m
 const TILE = 2;
 const THICK = 0.4;
 const CUBE_SIZE = TILE * 0.55;
+const TURN_WINDOW = 1.0; // tiles before a corner where a keypress instantly commits the turn
 
 function gameLang() { return localStorage.getItem('lang') || 'fr'; }
 function isDarkTheme() { return document.documentElement.getAttribute('data-theme') !== 'light'; }
@@ -11,7 +12,7 @@ function isDarkTheme() { return document.documentElement.getAttribute('data-them
 const STR = {
   fr: {
     ready: 'Prêt ?',
-    readyHint: 'Utilise ← / → (ou les boutons tactiles) pour tourner aux virages.',
+    readyHint: 'Utilise ← / → (ou Q / D, ou les boutons tactiles) pour tourner aux virages.',
     startBtn: 'Démarrer',
     fallTitle: 'Raté !',
     fallText: (t) => `Tu es tombé après ${t.toFixed(2)}s.`,
@@ -24,7 +25,7 @@ const STR = {
   },
   en: {
     ready: 'Ready?',
-    readyHint: 'Use ← / → (or the touch buttons) to turn at the corners.',
+    readyHint: 'Use ← / → (or A / D, or the touch buttons) to turn at the corners.',
     startBtn: 'Start',
     fallTitle: 'Missed!',
     fallText: (t) => `You fell after ${t.toFixed(2)}s.`,
@@ -130,14 +131,16 @@ function initCubeRunner() {
   }
 
   // ── Input ──
+  const LEFT_KEYS = ['ArrowLeft', 'a', 'A', 'q', 'Q']; // q = AZERTY equivalent of the QWERTY "a" position
+  const RIGHT_KEYS = ['ArrowRight', 'd', 'D'];
   let heldTurn = null;
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') heldTurn = 'left';
-    else if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') heldTurn = 'right';
+    if (LEFT_KEYS.includes(e.key)) heldTurn = 'left';
+    else if (RIGHT_KEYS.includes(e.key)) heldTurn = 'right';
   });
   window.addEventListener('keyup', (e) => {
-    if ((e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') && heldTurn === 'left') heldTurn = null;
-    if ((e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') && heldTurn === 'right') heldTurn = null;
+    if (LEFT_KEYS.includes(e.key) && heldTurn === 'left') heldTurn = null;
+    if (RIGHT_KEYS.includes(e.key) && heldTurn === 'right') heldTurn = null;
   });
   function bindTouch(btn, dir) {
     const set = (e) => { e.preventDefault(); heldTurn = dir; };
@@ -284,9 +287,29 @@ function initCubeRunner() {
       if (!derailed) {
         pos.x += currentDir.x * speed * dt;
         pos.z += currentDir.z * speed * dt;
-        const target = lvl.path[idx + 1];
-        const progressed = (pos.x - target.x) * currentDir.x + (pos.z - target.z) * currentDir.z;
-        if (progressed >= 0) {
+
+        let target = lvl.path[idx + 1];
+        let remaining = (target.x - pos.x) * currentDir.x + (target.z - pos.z) * currentDir.z;
+
+        // Respond to a turn key the instant it's pressed, as soon as we're within
+        // reach of the corner — instead of only checking once at the exact pivot
+        // frame, which made the controls feel laggy/unforgiving.
+        if (idx + 1 < lvl.path.length - 1 && remaining <= TURN_WINDOW) {
+          const nextTarget = lvl.path[idx + 2];
+          const nextDir = dirBetween(target, nextTarget);
+          if (!sameDir(nextDir, currentDir)) {
+            const r = turnRight(currentDir), l = turnLeft(currentDir);
+            if ((heldTurn === 'right' && sameDir(r, nextDir)) || (heldTurn === 'left' && sameDir(l, nextDir))) {
+              pos = { x: target.x, z: target.z };
+              currentDir = nextDir;
+              idx++;
+              target = lvl.path[idx + 1];
+              remaining = (target.x - pos.x) * currentDir.x + (target.z - pos.z) * currentDir.z;
+            }
+          }
+        }
+
+        if (remaining <= 0) {
           pos = { x: target.x, z: target.z };
           if (idx + 1 === lvl.path.length - 1) {
             triggerWin();
