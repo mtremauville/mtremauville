@@ -317,6 +317,7 @@ function setLanguage(lang) {
     if (btn) btn.textContent = lang === 'fr' ? 'EN' : 'FR';
   });
   updateGithubTotalLabel();
+  if (githubDaysCache) renderGithubMonthLabels(githubDaysCache);
 }
 
 // ── Scroll fade-in observer ──
@@ -635,6 +636,7 @@ function initScramble() {
 
 // ── GitHub contributions ──
 let githubTotalCount = null;
+let githubDaysCache = null;
 
 function updateGithubTotalLabel() {
   const totalEl = document.getElementById('github-total');
@@ -642,6 +644,31 @@ function updateGithubTotalLabel() {
   totalEl.textContent = currentLang === 'fr'
     ? `${githubTotalCount} contributions cette année`
     : `${githubTotalCount} contribution${githubTotalCount === 1 ? '' : 's'} in the last year`;
+}
+
+function renderGithubMonthLabels(days) {
+  const monthsEl = document.getElementById('contrib-months');
+  if (!monthsEl || !days || !days.length) return;
+  monthsEl.innerHTML = '';
+
+  const weeksCount = Math.ceil(days.length / 7);
+  const locale = currentLang === 'fr' ? 'fr-FR' : 'en-US';
+  const fmt = new Intl.DateTimeFormat(locale, { month: 'short' });
+  let lastMonth = null;
+
+  for (let col = 0; col < weeksCount; col++) {
+    const firstDayOfCol = days[col * 7];
+    const cell = document.createElement('span');
+    if (firstDayOfCol) {
+      const month = new Date(firstDayOfCol.date).getMonth();
+      if (month !== lastMonth) {
+        cell.className = 'contrib-month-label';
+        cell.textContent = fmt.format(new Date(firstDayOfCol.date));
+        lastMonth = month;
+      }
+    }
+    monthsEl.appendChild(cell);
+  }
 }
 
 function initGithubCalendar() {
@@ -656,6 +683,7 @@ function initGithubCalendar() {
     })
     .then(data => {
       const days = data.contributions || [];
+      githubDaysCache = days;
       grid.classList.remove('is-loading');
       grid.innerHTML = '';
       const frag = document.createDocumentFragment();
@@ -667,6 +695,7 @@ function initGithubCalendar() {
         frag.appendChild(cell);
       });
       grid.appendChild(frag);
+      renderGithubMonthLabels(days);
 
       githubTotalCount = data.total?.lastYear ?? days.reduce((sum, d) => sum + d.count, 0);
       updateGithubTotalLabel();
