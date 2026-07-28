@@ -761,6 +761,11 @@ function initGithubCalendar() {
 
       githubTotalCount = data.total?.lastYear ?? days.reduce((sum, d) => sum + d.count, 0);
       updateGithubTotalLabel();
+
+      const scrollWrap = grid.closest('.contrib-scroll');
+      if (scrollWrap) {
+        requestAnimationFrame(() => { scrollWrap.scrollLeft = scrollWrap.scrollWidth; });
+      }
     })
     .catch(() => {
       grid.classList.remove('is-loading');
