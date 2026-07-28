@@ -827,6 +827,14 @@ section {
 .project-row-body h3 a i { opacity: 0; transition: opacity 0.2s, transform 0.2s; }
 .project-row:hover h3 a i { opacity: 1; transform: translate(2px, -2px); }
 
+.project-github-link {
+  color: var(--text-muted);
+  font-size: 1rem;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+.project-github-link:hover { color: var(--accent); }
+
 .project-row-body p {
   font-size: 0.83rem;
   color: var(--text-muted);
