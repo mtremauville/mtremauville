@@ -65,6 +65,18 @@
 
     <audio id="ipod-audio" preload="metadata"></audio>
 
+    <div class="case-study fade-in">
+      <span class="section-tag">— case study</span>
+      <h2 data-i18n="ipod.case.title">Sous le capot</h2>
+      <p data-i18n="ipod.case.p1">Recréer la molette cliquable de l'iPod en <strong>CSS/JS pur</strong>, sans canvas ni librairie : il fallait calculer l'angle du pointeur par rapport au centre de la molette pour distinguer un geste de glissement (scroll) d'un simple tap sur une zone.</p>
+      <p data-i18n="ipod.case.p2">Le calcul repose sur <strong>Math.atan2</strong> pour obtenir l'angle du pointeur, converti en degrés puis découpé en zones (menu, lecture, suivant, précédent), avec une détection du sens de rotation pour le défilement.</p>
+      <ul class="case-study-points">
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="ipod.case.point1">Distinction glissement circulaire vs tap statique à partir d'un seul jeu d'événements pointerdown/pointermove.</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="ipod.case.point2">Navigation complète (liste de pistes, lecture, volume) pilotée uniquement par la molette.</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="ipod.case.point3">État applicatif centralisé dans un seul objet, pour garder l'interface et l'audio synchronisés.</span></li>
+      </ul>
+    </div>
+
   </div>
 
   <script src="js/main.js"></script>

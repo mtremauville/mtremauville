@@ -73,6 +73,18 @@
 
     </div>
 
+    <div class="case-study fade-in">
+      <span class="section-tag">— case study</span>
+      <h2 data-i18n="scanner.case.title">Sous le capot</h2>
+      <p data-i18n="scanner.case.p1">Le défi : décoder un code-barres en direct depuis le flux caméra sans aucun backend — tout tourne dans le navigateur, de la lecture optique à la recherche produit.</p>
+      <p data-i18n="scanner.case.p2">La détection s'appuie sur <strong>html5-qrcode</strong> pour lire le flux vidéo, branchée sur l'API <strong>Open Food Facts</strong> pour récupérer les infos produit en direct, avec un historique persistant en local.</p>
+      <ul class="case-study-points">
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="scanner.case.point1">Décodage caméra en direct, avec repli sur la saisie manuelle si l'accès caméra est refusé ou indisponible.</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="scanner.case.point2">États de recherche gérés explicitement — chargement, produit trouvé, introuvable, erreur réseau — chacun avec son rendu propre.</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="scanner.case.point3">Historique des 8 derniers scans en localStorage, dédupliqué par code-barres.</span></li>
+      </ul>
+    </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>

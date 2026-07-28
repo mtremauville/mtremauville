@@ -84,6 +84,18 @@
 
     </div>
 
+    <div class="case-study fade-in">
+      <span class="section-tag">— case study</span>
+      <h2 data-i18n="polaroid.case.title">Sous le capot</h2>
+      <p data-i18n="polaroid.case.p1">Le vrai défi n'était pas de prendre une photo, mais de rendre un filtre <strong>pixel art</strong> fluide en direct sur le flux vidéo, sans faire chauffer le CPU à recalculer chaque pixel en JavaScript.</p>
+      <p data-i18n="polaroid.case.p2">La solution : dessiner l'image sur un tout petit canvas caché, puis la redessiner en grand avec <strong>imageSmoothingEnabled à false</strong> — le navigateur fait l'agrandissement "au plus proche voisin" nativement, sans coût de calcul supplémentaire.</p>
+      <ul class="case-study-points">
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="polaroid.case.point1">Prévisualisation pixelisée en temps réel via une double étape de canvas, synchronisée avec requestAnimationFrame.</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="polaroid.case.point2">Rendu final composé sur un canvas de travail : photo, cadre polaroid et légende manuscrite (police Caveat).</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="polaroid.case.point3">Partage natif via la Web Share API, avec repli sur le téléchargement ou l'envoi par email.</span></li>
+      </ul>
+    </div>
+
   </div>
 
   <script src="js/main.js"></script>

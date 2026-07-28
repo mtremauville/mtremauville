@@ -1394,3 +1394,45 @@ section, footer, .ticker-wrapper { position: relative; z-index: 1; }
   text-align: center;
   max-width: 420px;
 }
+
+.case-study {
+  max-width: 620px;
+  margin: 64px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+.case-study h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 8px 0 18px;
+}
+.case-study p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.case-study p strong { color: var(--text); }
+
+.case-study-points {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+.case-study-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.case-study-points li i {
+  color: var(--accent);
+  margin-top: 4px;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+.case-study-points strong { color: var(--text); }

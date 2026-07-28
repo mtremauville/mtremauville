@@ -88,6 +88,18 @@
 
     </div>
 
+    <div class="case-study fade-in">
+      <span class="section-tag">— case study</span>
+      <h2 data-i18n="voice.case.title">Sous le capot</h2>
+      <p data-i18n="voice.case.p1">Le défi : faire tourner en parallèle deux API navigateur indépendantes sur le même flux micro — <strong>MediaRecorder</strong> pour capturer l'audio, et la <strong>Web Speech API</strong> pour la transcription en direct — chacune avec son propre cycle de vie.</p>
+      <p data-i18n="voice.case.p2">Un détail auquel il fallait penser : la langue parlée (choisie pour la reconnaissance vocale) est volontairement découplée de la langue d'affichage du site, persistée séparément — les deux n'ont rien à voir l'une avec l'autre.</p>
+      <ul class="case-study-points">
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="voice.case.point1">Sélection du meilleur format audio supporté par le navigateur via MediaRecorder.isTypeSupported, avec repli en cascade.</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="voice.case.point2">Reconstruction du texte à chaque événement de reconnaissance, en distinguant portion définitive et portion provisoire, sans jamais perdre ce qui est déjà validé.</span></li>
+        <li><i class="fa-solid fa-check"></i> <span data-i18n="voice.case.point3">Visualiseur de niveau audio en direct via un AnalyserNode de la Web Audio API branché sur le flux micro.</span></li>
+      </ul>
+    </div>
+
   </div>
 
   <script src="js/main.js"></script>
