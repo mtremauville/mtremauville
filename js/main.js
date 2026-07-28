@@ -62,6 +62,7 @@ const i18n = {
     'project1.desc':  'Compagnon streaming personnel — recherche via TMDB API, navigation Hotwire/Turbo sans rechargement, recommandations IA en cours d\'intégration.',
     'project2.desc':  'Analyseur d\'ingrédients cosmétiques IA — modélisation ActiveRecord des incompatibilités, LLM avec streaming SSE via ruby_llm, déployé Heroku.',
     'project3.desc':  'Reconnaissance de plantes par vision IA — front-end complet, authentification Devise, Git flow en équipe de 4 devs, déployé en production.',
+    'project9.desc':  'Base de données d\'animes avec recherche full-text instantanée, filtres dynamiques par genre, studio et année — propulsé par la Jikan API (MyAnimeList) et Algolia.',
 
     'stack.title':    'Ma stack',
     'stack.backend':  'Backend',
@@ -188,6 +189,7 @@ const i18n = {
     'project1.desc':  'Personal streaming companion — TMDB API search, Hotwire/Turbo navigation without page reload, AI recommendations in progress.',
     'project2.desc':  'AI cosmetic ingredient analyzer — ActiveRecord modeling of incompatibilities, LLM with SSE streaming via ruby_llm, deployed on Heroku.',
     'project3.desc':  'AI plant care — full front-end, Devise auth, Git flow in a 4-dev team, shipped to production.',
+    'project9.desc':  'An anime database with instant full-text search, dynamic filters by genre, studio and year — powered by the Jikan API (MyAnimeList) and Algolia.',
 
     'stack.title':    'My stack',
     'stack.backend':  'Backend',
