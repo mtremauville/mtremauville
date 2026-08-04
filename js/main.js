@@ -174,13 +174,8 @@ const i18n = {
     'contact.cv':     '<i class="fa-solid fa-file-arrow-down"></i> Download my resume',
 
     'about.h2':      'Profile',
-<<<<<<< HEAD
-    'about.p1':      "Front End <strong>Rails & AI</strong> developer, certified <strong>RNCP Level 6</strong> (Le Wagon Paris, 2026). I build applications <strong>end to end</strong>: ActiveRecord modeling, REST APIs, authentication, production deployment. And I integrate <strong>LLMs natively</strong> — OpenAI, Claude API — not as a bonus feature, but as a <strong>core business layer</strong>.",
-    'about.p2':      "My experience in High-Tech products client advising at <strong>FNAC</strong> and <strong>Apple</strong> taught me to understand <strong>business needs</strong>, communicate clearly with <strong>non-technical teams</strong>, and <strong>adapt quickly</strong> to new environments.",
-=======
     'about.p1':      "Frontend <strong>Rails & AI</strong> developer, certified <strong>RNCP Level 6</strong> (Le Wagon Paris, 2026). I build applications <strong>end to end</strong>: ActiveRecord modeling, REST APIs, authentication, production deployment. And I integrate <strong>LLMs natively</strong> — OpenAI, Claude API — not as a bonus feature, but as a <strong>core business layer</strong>.",
     'about.p2':      "My experience in technical client advising at <strong>FNAC</strong> and <strong>Apple</strong> taught me to understand <strong>business needs</strong>, communicate clearly with <strong>non-technical teams</strong>, and <strong>adapt quickly</strong> to new environments.",
->>>>>>> 5e49c4d7da19e9409d51ab8410d52795cadccd23
     'about.p3':      "Ready from day one — looking for a team to learn from and contribute to.",
     'xp1.date':      '2002 — Present',
     'xp1.role':      'Technical Expert &amp; Client Advisor',
