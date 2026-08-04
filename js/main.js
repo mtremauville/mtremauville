@@ -18,7 +18,7 @@ const i18n = {
 
     'about.h2':      'Profil',
     'about.p1':      "Développeur Frontend <strong>Ruby on Rails & IA</strong>, certifié <strong>RNCP Niveau 6</strong> (Le Wagon Paris, 2026). Je construis des applications <strong>de bout en bout</strong> : modélisation ActiveRecord, API REST, authentification, déploiement en production. Et j'intègre des <strong>LLMs nativement</strong> — OpenAI, Claude API — pas comme une fonctionnalité bonus, mais comme une <strong>couche métier à part entière</strong>.",
-    'about.p2':      "Mon expérience en vente et conseil en produits techniques aux clients à la <strong>FNAC</strong> et assistance techniquechez <strong>Apple</strong> m'ont appris à comprendre un <strong>besoin métier</strong>, à communiquer avec des <strong>équipes non-techniques</strong> et à <strong>m'adapter vite</strong> à de nouveaux contextes.",
+    'about.p2':      "Mon expérience en vente et conseil en produits techniques aux clients à la <strong>FNAC</strong> et assistance technique chez <strong>Apple</strong> m'ont appris à comprendre un <strong>besoin métier</strong>, à communiquer avec des <strong>équipes non-techniques</strong> et à <strong>m'adapter vite</strong> à de nouveaux contextes.",
     'about.p3':      "Opérationnel dès le premier jour — je cherche une équipe où apprendre et contribuer.",
     'xp1.date':      '2002 — Présent',
     'xp1.role':      'Expert Produits Techniques &amp; Conseil Client',
