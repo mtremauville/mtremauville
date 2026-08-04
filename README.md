@@ -1,22 +1,22 @@
-# 👋 Hey, I'm Mickaël
+# 👋 Hi, I'm Mickaël
 
-**Dev Support Engineer** · Full-Stack Developer · AI/LLM Integrator
+**Junior Frontend Developer** · Full-Stack background · AI/LLM Integrator
 
-> After explaining and selling tech to people. Now I build it — and help companies ship it to their customers.
+> I used to explain and sell tech to people. Now I build it — and help companies ship it to their customers.
 
 ---
 
-### 🧭 The short version
+### 🧭 In short
 
-I spent 22 years at **FNAC** and **Apple Store** turning complex tech into buying decisions for thousands of customers. In 2026, I graduated from **Le Wagon's AI Software Engineering bootcamp** (RNCP Level 6) and started building for real.
+For 22 years, at **FNAC** and **Apple Store**, I turned complex technology into confident buying decisions for thousands of customers. In 2026 I completed **Le Wagon's AI Software Engineering bootcamp** (RNCP Level 6) and started building for real.
 
-I'm looking for a **Junior Developer Support Engineer** role where my dual background — hands-on development + two decades of customer-facing tech expertise — becomes a real asset.
+I'm now looking for a **Junior Frontend Developer** role where my dual background — hands-on development plus two decades of customer-facing tech expertise — can really pay off.
 
 📍 Paris area · 🇫🇷 French (native) · 🇬🇧 English (fluent) · 🌐 [tremic.fr](https://tremic.fr)
 
 ---
 
-### 🔧 What I build with
+### 🔧 My toolbox
 
 **Backend**
 
@@ -54,28 +54,28 @@ I'm looking for a **Junior Developer Support Engineer** role where my dual backg
 
 ---
 
-### 🚀 Featured projects
+### 🚀 Things I've shipped
 
 | Project | What it does | Stack | Link |
 |---------|-------------|-------|------|
-| 🎾 **Padel Maestro** | AI coaching agent — generates personalized training plans with tactical advice | Rails 8 · OpenAI API · ruby_llm | [Repo](https://github.com/mtremauville/ai-assistant) |
-| 💄 **GlowrIA** | Smart skincare routine — barcode scan → INCI analysis → molecular conflict detection → AI-generated routine + streaming chat | Rails 8 · OpenAI · SSE · Stimulus JS | [Repo](https://github.com/mtremauville/glowria) |
-| 🌱 **PokéPlant** | AI plant recognition app — snap a photo, get species identification + care tips | Rails · OpenAI Vision API | <!--[Offline](https://pokeplant.online) ·--> [Repo](https://github.com/mtremauville/pokeplant) |
+| 🎾 **Padel Maestro** | An AI coaching agent that builds personalized training plans with tactical advice | Rails 8 · OpenAI API · ruby_llm | [Repo](https://github.com/mtremauville/ai-assistant) |
+| 💄 **GlowrIA** | A smart skincare assistant: scan a barcode, get INCI analysis, catch molecular conflicts, and receive an AI-generated routine with streaming chat | Rails 8 · OpenAI · SSE · Stimulus JS | [Repo](https://github.com/mtremauville/glowria) |
+| 🌱 **PokéPlant** | An AI plant recognition app — snap a photo and get the species plus care tips | Rails · OpenAI Vision API | <!--[Offline](https://pokeplant.online) ·--> [Repo](https://github.com/mtremauville/pokeplant) |
 
 ---
 
-### 💡 Why Solutions Engineer?
+### 💡 Why Frontend?
 
-Most Solutions Engineers are either **devs who learned to talk to clients** or **salespeople who learned to code**. I did both — just in the opposite order:
+Most junior frontend devs have never stood in front of a real user. I spent 22 years doing exactly that — watching people react to an interface in real time and figuring out, on the spot, what made it click or lose them:
 
-- **2002–2026**: 22 years of live product demos, technical objection handling, and training teams at FNAC & Apple Store
-- **2026**: Full-stack development certification (Le Wagon AI) + real projects shipped with Rails, AI/LLM, and streaming
+- **2002–2026**: 22 years reading user reactions live, handling objections, and training teams at FNAC & Apple Store
+- **2026**: Full-stack development certification (Le Wagon AI) and real-world projects shipped with Vue.js, React, Stimulus JS, and AI/LLM integrations
 
-I can **code a POC in the morning and demo it to a CTO in the afternoon**. That's the pitch.
+That user-facing instinct now shapes how I build interfaces: I care about the details that make people trust — or abandon — a product.
 
 ---
 
-### 📬 Let's connect
+### 📬 Get in touch
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/mickael-tremauville/)
 - 🌐 [tremic.fr](https://tremic.fr)
@@ -83,4 +83,4 @@ I can **code a POC in the morning and demo it to a CTO in the afternoon**. That'
 
 ---
 
-<sub>Looking for a **Customer Success Engineer / Dev Support Engineer ** role · Paris area · Available now</sub>
+<sub>Open to **Junior Frontend Developer** roles · Paris area · Available now</sub>
