@@ -67,7 +67,6 @@ const i18n = {
     'proj.live':      'En ligne',
     'proj.private':   'Code privé',
     'project8.desc':  "Jeu de réflexion 3D — un cube suit un chemin en grille, tourne au bon moment pour ne pas tomber. Rendu WebGL avec Three.js, chronomètre et meilleurs temps.",
-    'project7.desc':  "Dictaphone dans le navigateur — enregistrement audio (MediaRecorder), transcription vocale en direct (Web Speech API), export de l'audio et du texte.",
     'project6.desc':  'Photobooth dans le navigateur — capture caméra, filtres en direct, rendu polaroid (cadre + légende manuscrite), enregistrement et partage natif ou par email.',
     'project5.desc':  'Scanner de codes-barres dans le navigateur — décodage EAN/UPC via la caméra, recherche produit en direct sur Open Food Facts, historique local.',
     'project4.desc':  'Lecteur musical hommage à l\'iPod Classic — molette cliquable en CSS/JS pur (drag circulaire, détection de zones), menu de navigation, lecture audio avec Web Audio.',
@@ -75,7 +74,6 @@ const i18n = {
     'project2.desc':  "Assistant de vente pour conseillers en magasin — questionnaire guidé pour cerner le besoin, argumentaires générés par IA, parcours de vente complet jusqu'au ticket de caisse. Né de mon expérience de terrain.",
     'project3.desc':  "Projet de fin de bootcamp, en équipe de 4 : une plante à entretenir façon tamagotchi, avec qui l'on peut discuter. J'ai développé le chat avec la plante (GPT-4o mini) et l'animation du fond.",
     'project10.desc': "Back-office d'une plateforme de duels en ligne, en équipe — connexion, tableau de bord, statistiques, gestion des utilisateurs et des duels (recherche, filtres, litiges). Code privé (accord de confidentialité), démonstration possible à l'oral.",
-    'project9.desc':  'Base de données d\'animes avec recherche full-text instantanée, filtres dynamiques par genre, studio et année — propulsé par la Jikan API (MyAnimeList) et Algolia.',
 
     'stack.title':    'Ma stack',
     'stack.backend':  'Backend',
@@ -232,7 +230,6 @@ const i18n = {
     'proj.live':      'Live',
     'proj.private':   'Private code',
     'project8.desc':  'A 3D puzzle-reflex game — a cube follows a grid path, turn at the right moment to avoid falling. WebGL rendering with Three.js, timer and best times.',
-    'project7.desc':  'A browser-based voice recorder — audio recording (MediaRecorder), live speech-to-text transcription (Web Speech API), export of both audio and text.',
     'project6.desc':  'A browser-based photobooth — camera capture, live filters, polaroid rendering (frame + handwritten caption), save and share natively or by email.',
     'project5.desc':  'A browser-based barcode scanner — EAN/UPC decoding via the camera, live product lookup on Open Food Facts, local scan history.',
     'project4.desc':  'A tribute music player to the iPod Classic — pure CSS/JS click wheel (circular drag, zone detection), navigation menu, audio playback with Web Audio.',
@@ -240,7 +237,6 @@ const i18n = {
     'project2.desc':  'Sales assistant for retail tech advisors — guided needs assessment, AI-generated sales pitches, complete sales flow through to the checkout receipt. Born from my shop-floor experience.',
     'project3.desc':  'Le Wagon final project, built in a team of 4: a plant you take care of like a tamagotchi, and can chat with. I built the chat with the plant (GPT-4o mini) and the background animation.',
     'project10.desc': 'Back-office for an online duel platform, built in a team — login, dashboard, statistics, user and duel management (search, filters, disputes). Private code (confidentiality agreement), demo available in person.',
-    'project9.desc':  'An anime database with instant full-text search, dynamic filters by genre, studio and year — powered by the Jikan API (MyAnimeList) and Algolia.',
 
     'stack.title':    'My stack',
     'stack.backend':  'Backend',
