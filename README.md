@@ -1,86 +1,87 @@
-# 👋 Hi, I'm Mickaël
+<h1 align="center">Hi 👋, I'm Mickael Tremauville</h1>
+<h3 align="center">Junior Ruby on Rails / fullstack developer based in Paris, France</h3>
 
-**Junior Frontend Developer** · Full-Stack background · AI/LLM Integrator
+<p align="center">
+  <a href="https://www.linkedin.com/in/mickaeltremauville"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://mtremauville.github.io/mtremauville/"><img src="https://img.shields.io/badge/Portfolio-181717?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"></a>
+  <a href="https://tremic.fr"><img src="https://img.shields.io/badge/Blog-tremic.fr-FF5722?style=for-the-badge&logo=ghost&logoColor=white" alt="Blog"></a>
+  <a href="mailto:mickael.tremauville@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
-> I used to explain and sell tech to people. Now I build it — and help companies ship it to their customers.
-
----
-
-### 🧭 In short
-
-For 22 years, at **FNAC** and **Apple Store**, I turned complex technology into confident buying decisions for thousands of customers. In 2026 I completed **Le Wagon's AI Software Engineering bootcamp** (RNCP Level 6) and started building for real.
-
-I'm now looking for a **Junior Frontend Developer** role where my dual background — hands-on development plus two decades of customer-facing tech expertise — can really pay off.
-
-📍 Paris area · 🇫🇷 French (native) · 🇬🇧 English (fluent) · 🌐 [tremic.fr](https://tremic.fr)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=mtremauville&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views">
+</p>
 
 ---
 
-### 🔧 My toolbox
+### 👨‍💻 About me
 
-**Backend**
-
-![Ruby](https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=white)
-![Rails](https://img.shields.io/badge/Rails_8-CC0000?logo=rubyonrails&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![Devise](https://img.shields.io/badge/Devise-CC0000?logo=ruby&logoColor=white)
-![ActiveRecord](https://img.shields.io/badge/ActiveRecord-CC0000?logo=ruby&logoColor=white)
-
-**Frontend**
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=white)
-![Stimulus](https://img.shields.io/badge/Stimulus_JS-77E8B9?logo=stimulus&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![SCSS](https://img.shields.io/badge/CSS%2FSCSS-CC6699?logo=sass&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-
-**AI / LLM**
-
-![ruby_llm](https://img.shields.io/badge/ruby__llm-CC0000?logo=ruby&logoColor=white)
-![Claude API](https://img.shields.io/badge/Claude_API-D4A27F?logo=anthropic&logoColor=black)
-![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?logo=openai&logoColor=white)
-![SSE](https://img.shields.io/badge/SSE_Streaming-0A0A0A?logoColor=white)
-
-**Tools**
-
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
-![Heroku](https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white)
+- 🔭 Looking for a **junior Rails / fullstack developer** position (permanent contract) in the Île-de-France area
+- 🛍️ Former tech sales advisor at Fnac and Apple: I listen to a need before recommending a solution, and I do the same before writing code
+- 🎓 Graduated from the **Le Wagon** web development bootcamp (Jan to Mar 2026), RNCP level 6 "Concepteur Développeur d'Applications Web"
+- 🌱 Currently learning **TypeScript**, **React**, **Vue 3** and **ruby_llm**
+- 📝 I write about my career change on [tremic.fr](https://tremic.fr)
+- 💬 Ask me about Rails, Hotwire, deploying with Kamal, or retail tech
+- 📫 Reach me at **mickael.tremauville@gmail.com**
 
 ---
 
-### 🚀 Things I've shipped
+### 🚀 Featured projects
 
-| Project | What it does | Stack | Link |
-|---------|-------------|-------|------|
-| 🎾 **Padel Maestro** | An AI coaching agent that builds personalized training plans with tactical advice | Rails 8 · OpenAI API · ruby_llm | [Repo](https://github.com/mtremauville/ai-assistant) |
-| 💄 **GlowrIA** | A smart skincare assistant: scan a barcode, get INCI analysis, catch molecular conflicts, and receive an AI-generated routine with streaming chat | Rails 8 · OpenAI · SSE · Stimulus JS | [Repo](https://github.com/mtremauville/glowria) |
-| 🌱 **PokéPlant** | An AI plant recognition app — snap a photo and get the species plus care tips | Rails · OpenAI Vision API | <!--[Offline](https://pokeplant.online) ·--> [Repo](https://github.com/mtremauville/pokeplant) |
-
----
-
-### 💡 Why Frontend?
-
-Most junior frontend devs have never stood in front of a real user. I spent 22 years doing exactly that — watching people react to an interface in real time and figuring out, on the spot, what made it click or lose them:
-
-- **2002–2026**: 22 years reading user reactions live, handling objections, and training teams at FNAC & Apple Store
-- **2026**: Full-stack development certification (Le Wagon AI) and real-world projects shipped with Vue.js, React, Stimulus JS, and AI/LLM integrations
-
-That user-facing instinct now shapes how I build interfaces: I care about the details that make people trust — or abandon — a product.
+| Project | Description | Links |
+| --- | --- | --- |
+| **Next** | Movie and TV show tracker organised by status and playlists, with posters and details fetched from TMDB. Try it with the "Essayer sans compte" button, no sign-up needed. | [Demo](https://next.tremic.fr) · [Code](https://github.com/mtremauville/next_app) |
+| **WiseProd** | Sales assistant tool for retail tech advisors: guided needs assessment, AI-generated sales pitches and a complete sales flow through to the checkout receipt. | [Code](https://github.com/mtremauville/wiseprod) |
+| **PokéPlant** | Le Wagon final project, built in a team of 4. A plant you take care of like a tamagotchi, and can chat with. I built the chat with the plant (GPT-4o mini). | [Code](https://github.com/mtremauville/pokeplant) |
 
 ---
 
-### 📬 Get in touch
+### 🛠️ Tech stack
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/mickael-tremauville/)
-- 🌐 [tremic.fr](https://tremic.fr)
-- 📧 [Send me a message](mailto:mickael.tremauville@gmail.com)
+**Back end**
+
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)
+![Ruby on Rails](https://img.shields.io/badge/Ruby_on_Rails-D30001?style=flat-square&logo=rubyonrails&logoColor=white)
+![Active Record](https://img.shields.io/badge/Active_Record-D30001?style=flat-square&logo=rubyonrails&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
+**Front end**
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Hotwire](https://img.shields.io/badge/Hotwire-4A90D9?style=flat-square&logo=hotwire&logoColor=white)
+![Stimulus](https://img.shields.io/badge/Stimulus-77E8B9?style=flat-square&logo=stimulus&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Sass](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+**Tools and deployment**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kamal](https://img.shields.io/badge/Kamal-D30001?style=flat-square&logo=rubyonrails&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+
+**Learning**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![ruby_llm](https://img.shields.io/badge/ruby__llm-CC342D?style=flat-square&logo=ruby&logoColor=white)
 
 ---
 
-<sub>Open to **Junior Frontend Developer** roles · Paris area · Available now</sub>
+### 📊 GitHub stats
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=mtremauville&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub stats">
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mtremauville&layout=compact&theme=github_dark&hide_border=true" alt="Top languages">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mtremauville&theme=github-dark&hide_border=true" alt="GitHub streak">
+</p>
