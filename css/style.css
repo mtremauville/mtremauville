@@ -1510,3 +1510,41 @@ section, footer, .ticker-wrapper { position: relative; z-index: 1; }
   .game-modal { padding: 0; }
   .game-modal-panel { width: 100%; height: 100%; border-radius: 0; }
 }
+
+/* ── Project cards with cover image (text over image) ── */
+.project-row-body.has-cover {
+  position: relative;
+  isolation: isolate;
+  padding: 26px 28px;
+  min-height: 250px;
+  justify-content: center;
+  border: 1px solid var(--border-h);
+  border-radius: 12px;
+  background: #080c16;
+  overflow: hidden;
+}
+.project-row-body.has-cover .project-cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  z-index: -2;
+}
+.project-row-body.has-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(8,12,22,.96) 0%, rgba(8,12,22,.90) 50%, rgba(8,12,22,.10) 100%);
+}
+.project-row-body.has-cover > :not(.project-cover) { max-width: 56%; }
+.project-row-body.has-cover h3,
+.project-row-body.has-cover h3 a { color: #fff; }
+.project-row-body.has-cover p { color: #d3d9e8; }
+.project-row-body.has-cover .project-github-link { color: #fff; }
+@media (max-width: 760px) {
+  .project-row-body.has-cover::before { background: linear-gradient(180deg, rgba(8,12,22,.92), rgba(8,12,22,.86)); }
+  .project-row-body.has-cover > :not(.project-cover) { max-width: 100%; }
+}
